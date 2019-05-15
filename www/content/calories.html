@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+    <title>Work It Out | Track Calories</title>
+</head>
+
+<body>
+    <div id="banner">
+        <!-- <img src="BackArrow.jpg" alt="The back button" /> -->
+        <a id="banner_text_link" href="../content/home.html">Work It Out</a>
+    </div>
+    <div id="wrapper">
+        <div id="calories_page_image_div">
+            <!-- Default image will be the logo. Once a user uploads an image it will take the image of their choice. -->
+            <img id="page_image" onclick="window.location.href='../content/home.html'"
+                src="../images/work_it_out_logo.png" alt="Work It Out Logo">
+        </div>
+        <div>
+            <h2>Calories</h2>
+        </div>
+        <div id="calorie_count_section">
+            <h3>Total Cals Today</h3>
+            <!-- increment the calories by ~10 or 25 -->
+            <button onclick="CalorieManager.addMultiCals()" id="add_unit_calories"> + </button>
+            <div id="calorie_score"></div>
+            <button onclick="CalorieManager.subtractMultiCals()" id="subtract_unit_calories"> - </button>
+        </div>
+        <script src="../scripts/calorie_management.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,6 +1,10 @@
-#ignore everything 
-*
-/*/
+#Ignore everything                                                             
+*                                                                              
+/*/                                                                             
+                                                                                
+!.gitignore                                                                    
+!config.xml
+                                                                                
+!/www/                                                                         
 
-!.gitignore
-!/www/
+ 

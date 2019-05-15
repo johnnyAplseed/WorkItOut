@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+
+<head>
+    <title>Work It Out | Create Timer</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+</head>
+
+<body>
+
+    <div id="banner">
+        <!-- <img src="BackArrow.jpg" alt="The back button" /> -->
+        <a id="banner_text_link" href="../content/home.html">Work It Out</a>
+    </div>
+
+    <div id="wrapper">
+        <div>
+
+            <div id="timer_field">
+                <h2>Name your Timer:</h2>
+                <input type="text" id="new_timer_name" name="new_timer_name" maxlength="40"
+                    placeholder="New timer name...">
+            </div>
+            <div id="timer_field">
+                <h3>Set Timer Length in Minutes</h3>
+                <button onclick="TimerManager.addMinute()" class="add_unit_water">+</button>
+                <div id="timer_amount"></div>
+                <button onclick="TimerManager.subtractMinute()" class="add_unit_water">-</button>
+            </div>
+        </div>
+        <div class="cancel_submit">
+            <button id="cancel_button" onclick="window.location.href='../content/home.html'">Cancel</button>
+            <button id="submit_button" onclick="TimerManager.submitTimer()">Submit</button>
+        </div>
+        <script src="../scripts/timer_management.js"></script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+
+<head>
+    <title>Work It Out | Create Workout</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+</head>
+
+<body>
+
+    <div id="banner">
+        <!-- <img src="BackArrow.jpg" alt="The back button" /> -->
+        <a id="banner_text_link" href="../content/home.html">Work It Out</a>
+    </div>
+
+    <div id="wrapper">
+        <div>
+
+            <div id="name_workout">
+                <h1>New Custom Workout:</h1>
+                <input type="text" name="new_workout_name" maxlength="40" placeholder="Name of workout...">
+            </div>
+
+            <div id="typeof_workout">
+                <h2>Workout type:</h2>
+                <select id="workout_type">
+                    <option value="Biking">Biking</option>
+                    <option value="Cardio">Cardio</option>
+                    <option value="Circuit_Training">Circuit Training</option>
+                    <option value="Crossfit">Crossfit</option>
+                    <option value="HIIT">H.I.I.T.</option>
+                    <option value="Running">Running</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Strength">Strength</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Weight_Training">Weight Training</option>
+                    <option value="Other">Other...</option>
+                </select>
+            </div>
+            <hr>
+            <div id="exercises_for_workout">
+
+            </div>
+            <div>
+                <br>
+                <button class="add_exercise" onclick="AddWorkoutManager.subtractExercise()"> - 1</button>
+                <button class="add_exercise" onclick="AddWorkoutManager.addExercise()"> + 1</button>
+                <br>
+            </div>
+
+        </div>
+        <div class="cancel_submit">
+            <button id="cancel_button" onclick="window.location.href='../content/workouts.html'">Cancel</button>
+            <input id="submit_button" type="submit" name="submit_new_exercise">
+        </div>
+        <script src="../scripts/add_workout_management.js"></script>
+    </div>
+
+</body>
+
+</html>

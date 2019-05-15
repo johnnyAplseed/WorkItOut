@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+    <title>Work It Out | User Profile</title>
+</head>
+
+<body>
+    <div id="banner">
+        <a id="banner_text_link" href="../content/home.html">Work It Out</a>
+    </div>
+    <div id="wrapper">
+        <div id="profile_page_image_div">
+            <!-- Default image will be the logo. Once a user uploads an image it will take the image of their choice. -->
+            <img id="page_image" onclick="window.location.href='../content/home.html'"
+                src="../images/work_it_out_logo.png" alt="Work It Out logo">
+            <div id="upload_image">
+                <h2>Add Images</h2>
+                <input type="file" name="upload_profile_image" accept="image/*" multiple />
+            </div>
+        </div>
+        <h2>Profile</h2>
+        <div id="manage_profile_info_outer">
+            <div class="profile_input">
+                <label class="profile_label">First Name &nbsp;</label>
+                <input class="profile_field" type="text" name="user_firstname" maxlength="20"
+                    placeholder="">
+                <hr class="profile_hr" />
+            </div>
+            <div class="profile_input">
+                <label class="profile_label">Last Name &nbsp;</label>
+                <input class="profile_field" type="text" name="user_lastname" maxlength="20" placeholder="">
+                <hr class="profile_hr" />
+            </div>
+            <div class="profile_input">
+                <label class="profile_label">Height &nbsp;</label>
+                <input class="profile_field" type="text" name="user_firstname" maxlength="20" placeholder="">
+                <hr class="profile_hr" />
+            </div>
+            <div class="profile_input">
+                <label class="profile_label">Weight &nbsp;</label>
+                <input class="profile_field" type="text" name="user_firstname" maxlength="20" placeholder="">
+                <hr class="profile_hr" />
+            </div>
+            <div class="profile_input">
+                <label class="profile_label">Body Fat &nbsp;</label>
+                <input class="profile_field" type="text" name="user_firstname" maxlength="20"
+                       placeholder="">
+                <hr class="profile_hr" />
+            </div>
+            <div id="WIO_score_section">
+                <h3>Your WIO Score</h3>
+                <h2 id="WIO_score">...</h2>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

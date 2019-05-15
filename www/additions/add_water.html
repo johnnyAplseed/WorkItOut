@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+
+<head>
+    <title>Work It Out | Add Water</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+</head>
+
+<body>
+
+    <div id="banner">
+        <!-- <img src="BackArrow.jpg" alt="The back button" /> -->
+        <a id="banner_text_link" href="../content/home.html">Work It Out</a>
+    </div>
+
+    <div id="wrapper">
+        <form action="http://tbd.com" method="post">
+
+            <div id="name_workout">
+                <h3>Add a specific container:</h3>
+                <input type="text" name="water_name" maxlength="40" placeholder="Frequent bottle name...">
+                <h3>How many ounces the container holds:</h3>
+                <input type="text" name="water_ounces" maxlength="40" placeholder="Number of ounces...">
+            </div>
+
+        </form>
+        <hr>
+        <div class="cancel_submit">
+            <button id="cancel_button" onclick="window.location.href='../content/home.html'">Cancel</button>
+            <input id="submit_button" type="submit" name="submit_new_exercise">
+        </div>
+    </div>
+
+</body>
+
+</html>

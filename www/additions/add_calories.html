@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+
+<head>
+    <title>Work It Out | Add Calories</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+</head>
+
+<body>
+
+    <div id="banner">
+        <!-- <img src="BackArrow.jpg" alt="The back button" /> -->
+        <a id="banner_text_link" href="../content/home.html">Work It Out</a>
+    </div>
+
+    <div id="wrapper">
+        <div id="name_workout">
+            <h3>Add a common food item:</h3>
+            <input type="text" name="calorie_name" maxlength="40" placeholder="Name of food...">
+        </div>
+        <div id="calorie_count_section">
+            <h3>Amount of calories:</h3>
+            <!-- increment the calories by ~10 or 25 -->
+            <button class="add_cal_button" onclick="CalorieManager.addTenCals()">+10</button>
+            <button class="add_cal_button" onclick="CalorieManager.addTwentyFiveCals()">+25</button>
+            <div id="set_calories"></div>
+            <button class="add_cal_button bottom" onclick="CalorieManager.subtractTenCals()">-10</button>
+            <button class="add_cal_button bottom" onclick="CalorieManager.subtractTwentyFiveCals()">-25</button>
+            <hr class="add_calorie_page_hr"/>
+        </div>
+
+
+        <div>
+            <button class="add_calorie_item">Add Another Item</button>
+        </div>
+
+        <div class="cancel_submit">
+            <button id="cancel_button" onclick="window.location.href='../content/home.html'">Cancel</button>
+            <input id="submit_button" type="submit" name="submit_new_exercise">
+        </div>
+        <h5>*This amount will be applied to your daily total immediately*</h5>
+
+
+    </div>
+    <script src="../scripts/add_calorie_management.js"></script>
+</body>
+
+</html>

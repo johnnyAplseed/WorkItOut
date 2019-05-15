@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+
+<head>
+    <title>Work It Out | Track Progress</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+</head>
+
+<body>
+
+    <div id="banner">
+        <!-- <img src="BackArrow.jpg" alt="The back button" /> -->
+        <a id="banner_text_link" href="../content/home.html">Work It Out</a>
+    </div>
+
+    <div id="wrapper">
+        <form action="http://tbd.com" method="post">
+
+            <div id="name_progress">
+                <h1>Track Your Progress:</h1>
+                <textarea rows="4" cols="45" placeholder="Type progress memo here..." required, autofocus></textarea>
+            </div>
+
+            <div id="add_progress_image">
+                <h3>Add images:</h3>
+                <input type="file" name="progress_imgs" accept="image/*" multiple />
+                <br>
+                <h3>Caption your photo:</h3>
+                <input type="text" name="progress_caption" maxlength="75" placeholder="Caption your image...">
+                <input type="date" name="progress_date">
+            </div>
+        </form>
+
+        <div>
+            <br>
+            <button id="add_progress">Add Progress</button>
+            <br>
+        </div>
+
+        <div class="cancel_submit">
+            <button id="cancel_button" onclick="window.location.href='../content/home.html'">Cancel</button>
+            <input id="submit_button" type="submit" name="submit_new_progress">
+        </div>
+    </div>
+
+</body>
+
+</html>
