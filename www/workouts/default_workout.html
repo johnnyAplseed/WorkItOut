@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+    <title>Work It Out | Choose Workout</title>
+</head>
+
+<body>
+    <div id="banner">
+        <a id="banner_text_link" href="../content/home.html">Work It Out</a>
+    </div>
+    <div id="wrapper">
+        <div>
+            <img id="page_image" onclick="window.location.href='../content/home.html'"
+                src="../images/work_it_out_logo_workouts.png" alt="Work It Out logo">
+        </div>
+        <!-- Display a Timer after pressing start -->
+        <div>
+        <button id="add_exercise">START WORKOUT</button>
+        </div>
+        <div id="current_workout">
+            <!-- I want to show the weight of the rep first and then move to the number. 
+            Each button to the right of the workout name will be boolean. 
+                - The workout can be tapped to move to the next workout
+                - The weight will be shown first and WILL be tapped to display reps 
+                - The weight will be shown once you tap on the number of reps to signify that set is done
+                    - Maybe add a hyperscipt to signify which set your on or words to the right
+                - Maybe just make a button that has necessary info on it for set and rep -->
+            <div class="workout_exercise">
+                <div class="set_name">Pushups</div>
+                <div class="set_exercise">15</div>
+                <div class="set_exercise">15</div>
+                <div class="set_exercise">15</div>
+                <div class="set_exercise">15</div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Situps</div>
+                <div class="set_exercise">F</div>
+                <div class="set_exercise">F</div>
+                <div class="set_exercise">F</div>
+                <div class="set_exercise">F</div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Pullups</div>
+                <div class="set_exercise">F</div>
+                <div class="set_exercise">F</div>
+                <div class="set_exercise">F</div>
+                <div class="set_exercise">F</div>
+            </div>
+            <button id="add_exercise">COMPLETE WORKOUT</button>
+        </div>
+    </div>
+</body>
+
+</html>
