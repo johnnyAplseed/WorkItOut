@@ -1,4 +1,4 @@
-var ProfileManager = (function() {
+var ProfileManager = (function () {
     var storageKey = "Profile Info";
 
     var tempProfile = JSON.parse(window.localStorage.getItem(storageKey));
@@ -16,8 +16,9 @@ var ProfileManager = (function() {
         document.getElementById("profile_fieldLName").value = profile.fLName;
         document.getElementById("profile_fieldHeight").value = profile.fHeight;
         document.getElementById("profile_fieldWeight").value = profile.fWeight;
+        document.getElementById("profile_fieldAge").value = profile.fAge;
         document.getElementById("profile_fieldBodyfat").value =
-            profile.fBodyfat;
+            profile.fBodyFat;
     };
 
     displayinfo(this.savedProfileInfo);
@@ -32,6 +33,7 @@ var ProfileManager = (function() {
             fLName: document.getElementById("profile_fieldLName").value,
             fHeight: document.getElementById("profile_fieldHeight").value,
             fWeight: document.getElementById("profile_fieldWeight").value,
+            fAge: document.getElementById("profile_fieldAge").value,
             fBodyFat: document.getElementById("profile_fieldBodyfat").value
         };
 
