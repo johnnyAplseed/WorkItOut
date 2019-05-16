@@ -1,23 +1,26 @@
 var ProfileManager = (function() {
     var storageKey = "Profile Info";
 
-    var savedProfileInfo = window.localStorage.getItem(storageKey);
+    var tempProfile = JSON.parse(window.localStorage.getItem(storageKey));
+    this.savedProfileInfo =
+        tempProfile === undefined || tempProfile === null ? 0 : tempProfile;
 
-    this.displayinfo = tempProfile => {
+    console.log(savedProfileInfo);
+
+    var displayinfo = profile => {
         // eventually make the label phase out nicely
-        (document.getElementById("profile_fieldFName").value =
-            tempProfile.fFName),
-            (document.getElementById("profile_fieldLName").value =
-                tempProfile.fLName),
-            (document.getElementById("profile_fieldHeight").value =
-                tempProfile.fHeight),
-            (document.getElementById("profile_fieldWeight").value =
-                tempProfile.fWeight),
-            (document.getElementById("profile_fieldBodyfat").value =
-                tempProfile.fBodyfat);
+        document.getElementById("profile_fieldFName").value =
+            profile.fFName === undefined || profile.fFName == null
+                ? 0
+                : profile.fFName;
+        document.getElementById("profile_fieldLName").value = profile.fLName;
+        document.getElementById("profile_fieldHeight").value = profile.fHeight;
+        document.getElementById("profile_fieldWeight").value = profile.fWeight;
+        document.getElementById("profile_fieldBodyfat").value =
+            profile.fBodyfat;
     };
 
-    this.displayInfo(savedProfileInfo);
+    displayinfo(this.savedProfileInfo);
 
     this.saveInfo = (storKey, fields) => {
         window.localStorage.setItem(storKey, fields);
@@ -32,9 +35,9 @@ var ProfileManager = (function() {
             fBodyFat: document.getElementById("profile_fieldBodyfat").value
         };
 
-        displayInfo(tempInfo);
-        console.log(storageKey);
-        this.saveInfo(storageKey, JSON.stringify(this.info));
+        // this.displayInfo(tempInfo);
+        console.log(JSON.stringify(this.tempInfo));
+        this.saveInfo(storageKey, JSON.stringify(this.tempInfo));
     };
 
     return {
