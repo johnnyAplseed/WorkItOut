@@ -49,7 +49,7 @@ body {
 }
 
 #banner {
-    background-color: rgb(83, 83, 83);
+    background-color: rgb(48, 48, 48);
     /*#990000; */
     font-family: Impact;
     color: #fafafa;
@@ -148,19 +148,19 @@ body {
 
 h1 {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    color: rgb(83, 83, 83);
+    color: rgb(48, 48, 48);
     font-size: 2.75rem;
 }
 
 h2 {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    color: rgb(83, 83, 83);
+    color: rgb(48, 48, 48);
     font-size: 2rem;
 }
 
 h3 {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    color: rgb(83, 83, 83);
+    color: rgb(48, 48, 48);
     font-size: 1.25rem;
 }
 
@@ -172,10 +172,27 @@ hr {
     width: 100%;
 }
 
+.submit_profile_info {
+    width: 100%;
+    margin: 1rem 0;
+}
+
 button {
     display: block;
     height: 3rem;
-    color: rgb(83, 83, 83);
+    color: rgb(48, 48, 48);
+    border-radius: 10px;
+    background-color: #fafafa;
+    font-size: 1.75rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.home_page_button {
+    float: left;
+    width: 75%;
+    display: block;
+    height: 3rem;
+    color: rgb(48, 48, 48);
     border-radius: 10px;
     background-color: #fafafa;
     font-size: 1.75rem;
@@ -186,7 +203,7 @@ button {
 #cancel_button {
     width: 50%;
     height: 3rem;
-    color: rgb(83, 83, 83);
+    color: rgb(48, 48, 48);
     border-radius: 10px;
     background-color: #fafafa;
     font-size: 1.25rem;
@@ -207,7 +224,7 @@ button {
 
 h5 {
     font-family: Arial;
-    color: rgb(83, 83, 83);
+    color: rgb(48, 48, 48);
 }
 
 #add_exercise,
@@ -215,7 +232,7 @@ h5 {
 .add_calorie_item {
     width: 100%;
     height: 3rem;
-    color: rgb(83, 83, 83);
+    color: rgb(48, 48, 48);
     border-radius: 10px;
     background-color: #fafafa;
     font-size: 1.25rem;
@@ -226,7 +243,7 @@ h5 {
 .add_exercise {
     width: 50%;
     height: 3rem;
-    color: rgb(83, 83, 83);
+    color: rgb(48, 48, 48);
     border-radius: 10px;
     background-color: #fafafa;
     font-size: 1.25rem;
@@ -237,7 +254,7 @@ h5 {
 .add_item {
     width: 25%;
     height: 3rem;
-    color: rgb(83, 83, 83);
+    color: rgb(48, 48, 48);
     border-radius: 10px;
     background-color: #fafafa;
     font-size: 1.75rem;
@@ -248,7 +265,7 @@ h5 {
     width: 100%;
     height: 3rem;
     align-self: center;
-    color: rgb(83, 83, 83);
+    color: rgb(48, 48, 48);
     border-radius: 10px;
     background-color: #fafafa;
     font-size: 1.75rem;
@@ -259,7 +276,7 @@ h5 {
     width: 100%;
     height: 3rem;
     align-self: center;
-    color: rgb(83, 83, 83);
+    color: rgb(48, 48, 48);
     border-radius: 10px;
     background-color: #fafafa;
     font-size: 1.75rem;
@@ -277,7 +294,7 @@ h5 {
     height: 3rem;
     margin: 1rem 20%;
     align-self: center;
-    color: rgb(83, 83, 83);
+    color: rgb(48, 48, 48);
     border-radius: 10px;
     background-color: #fafafa;
     font-size: 1.75rem;
@@ -297,7 +314,7 @@ img,
 }
 
 select {
-    color: rgb(83, 83, 83);
+    color: rgb(48, 48, 48);
     width: 160.8px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -323,7 +340,7 @@ textarea {
 #calorie_score,
 #set_calories,
 #timer_amount {
-    color: rgb(83, 83, 83);
+    color: rgb(48, 48, 48);
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-size: 2rem;
 }
@@ -360,7 +377,7 @@ label {
     display: block;
     align-items: center;
     margin: auto;
-    color: rgb(83, 83, 83);
+    color: rgb(48, 48, 48);
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
@@ -376,7 +393,7 @@ input[type="text"]:focus {
 }
 
 #progress_info {
-    color: rgb(83, 83, 83);
+    color: rgb(48, 48, 48);
     position: relative;
     width: 100%;
     height: auto;
@@ -420,14 +437,13 @@ input[type="text"]:focus {
 }
 
 #current_workout {
-    color: rgb(83, 83, 83);
-    padding-top: 5rem;
+    color: rgb(48, 48, 48);
     width: 100%;
     height: auto;
 }
 
 .workout_exercise {
-    background-color: rgb(83, 83, 83);
+    background-color: #c4c4c4;
     height: 3rem;
     width: auto;
     align-content: center;
@@ -436,21 +452,26 @@ input[type="text"]:focus {
     color: #fafafa;
     float: left;
     height: 100%;
-    width: 30%;
+    padding: 0 0.2rem;
+    width: calc(30% - 0.4rem);
+    border-radius: 50%;
     text-align: center;
     vertical-align: center;
     line-height: 3rem;
-    border-style: outset;
+    /* border-style: outset; */
     background-color: #990000;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .set_exercise {
     float: right;
-    width: calc(70% / 4);
+    width: calc(calc(70% / 4) - 0.2rem);
     height: 100%;
+    padding: 0 0.1rem;
+    margin: 0 0.1rem;
+    border-radius: 50%;
     text-align: center;
     vertical-align: center;
     line-height: 3rem;
-    border-style: outset;
+    /* border-style: outset; */
     background-color: #fafafa;
 }
