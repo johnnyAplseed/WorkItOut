@@ -1,60 +1,45 @@
 var ProfileManager = (function() {
-    var storageKey = "ProfileInfo";
+    var storageKey = "Profile Info";
 
-    var tempProfileInfo = window.localStorage.getItem(storageKey);
+    var savedProfileInfo = window.localStorage.getItem(storageKey);
 
-    this.info = {
-        labelFName = document.getElementById("proflie_labelFName"),
-        fieldFName = document.getElementById("proflie_fieldFName"),
-        labelLName = document.getElementById("proflie_labelLName"),
-        fieldLName = document.getElementById("proflie_fieldLName"),
-        labelHeight = document.getElementById("proflie_labelHeight"),
-        fieldHeight = document.getElementById("proflie_fieldHeight"),
-        labelWeight = document.getElementById("proflie_labelWeight"),
-        fieldWeight = document.getElementById("proflie_fieldWeight"),
-        labelBodyfat = document.getElementById("proflie_labelBodyfat"),
-        fieldBodyFat = document.getElementById("proflie_fieldBodyfat")
-        // this.label = document.getElementById("proflie_label");
-        // this.field = document.getElementById("proflie_field");
+    this.displayinfo = tempProfile => {
+        // eventually make the label phase out nicely
+        (document.getElementById("profile_fieldFName").value =
+            tempProfile.fFName),
+            (document.getElementById("profile_fieldLName").value =
+                tempProfile.fLName),
+            (document.getElementById("profile_fieldHeight").value =
+                tempProfile.fHeight),
+            (document.getElementById("profile_fieldWeight").value =
+                tempProfile.fWeight),
+            (document.getElementById("profile_fieldBodyfat").value =
+                tempProfile.fBodyfat);
     };
 
-    this.changeInfo = () => {
-        this.info.fieldFName = this.fieldFName.textContent;
-        this.info.labelFName.textContent = "";
-        
-        this.info.fieldLName = this.fieldLName.textContent;
-        this.info.labelFName.textContent = "";
-        
-        this.info.fieldHeight = this.fieldHeight.textContent;
-        this.info.labelFName.textContent = "";
-        
-        this.info.fieldWeight = this.fieldWeight.textContent;
-        this.info.labelFName.textContent = "";
-        
-        this.info.fieldBodyFat = this.fieldBodyFat.textContent;
-        this.info.labelFName.textContent = "";        
-
-        this.saveInfo(this.storageKey, this.info);
-    };
+    this.displayInfo(savedProfileInfo);
 
     this.saveInfo = (storKey, fields) => {
         window.localStorage.setItem(storKey, fields);
     };
 
+    this.changeInfo = () => {
+        this.tempInfo = {
+            fFName: document.getElementById("profile_fieldFName").value,
+            fLName: document.getElementById("profile_fieldLName").value,
+            fHeight: document.getElementById("profile_fieldHeight").value,
+            fWeight: document.getElementById("profile_fieldWeight").value,
+            fBodyFat: document.getElementById("profile_fieldBodyfat").value
+        };
 
-    this.addWater = () => {
-        this.showAmount(++this.amount);
-        window.localStorage.setItem(storageKey, this.amount);
-    };
-
-    this.subtractWater = () => {
-        this.showAmount(--this.amount);
-        window.localStorage.setItem(storageKey, this.amount);
+        displayInfo(tempInfo);
+        console.log(storageKey);
+        this.saveInfo(storageKey, JSON.stringify(this.info));
     };
 
     return {
-        amount: this.amount,
-        addWater: this.addWater,
-        subtractWater: this.subtractWater
+        displayInfo: this.displayInfo,
+        changeInfo: this.changeInfo,
+        saveInfo: this.saveInfo
     };
 })();

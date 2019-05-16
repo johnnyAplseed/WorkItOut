@@ -19,43 +19,43 @@
         <h2>Profile</h2>
         <div id="manage_profile_info_outer">
             <div class="profile_input">
-                <label id="profile_labelFName">First Name &nbsp;</label>
+                <label id="profile_labelFName">First Name</label>
                 <input id="profile_fieldFName" type="text" name="user_firstname" maxlength="20"
                     placeholder="">
                 <hr class="profile_hr" />
             </div>
             <div class="profile_input">
-                <label id="profile_labelLName">Last Name &nbsp;</label>
+                <label id="profile_labelLName">Last Name</label>
                 <input id="profile_fieldLName" type="text" name="user_lastname" maxlength="20" placeholder="">
                 <hr class="profile_hr" />
             </div>
             <div class="profile_input">
-                <label id="profile_labelHeight">Height &nbsp;</label>
-                <input id="profile_fieldheight" type="text" name="user_firstname" maxlength="20" placeholder="">
+                <label id="profile_labelHeight">Height</label>
+                <input id="profile_fieldHeight" type="text" name="user_firstname" maxlength="20" placeholder="">
                 <hr class="profile_hr" />
             </div>
             <div class="profile_input">
-                <label id="profile_labelWeight">Weight &nbsp;</label>
+                <label id="profile_labelWeight">Weight</label>
                 <input id="profile_fieldWeight" type="text" name="user_firstname" maxlength="20" placeholder="">
                 <hr class="profile_hr" />
             </div>
             <div class="profile_input">
-                <label id="profile_labelBodyFat">*Body Fat &nbsp;</label>
-                <input id="profile_fieldBodyFat" type="text" name="user_firstname" maxlength="20"
+                <label id="profile_labelBodyfat">*Body Fat</label>
+                <input id="profile_fieldBodyfat" type="text" name="user_firstname" maxlength="20"
                        placeholder="">
                 <hr class="profile_hr" />
             </div>
             <div>
-                <button class="submit_profile_info" onclick="">SUBMIT</button>
+                <button class="submit_profile_info" onclick="ProfileManager.changeInfo()">SUBMIT</button>
             </div>
             <div id="WIO_score_section">
-                <h3>Your BMI</h3>
+                <h3>BMI</h3>
                 <h2 id="WIO_score">...</h2>
             </div>
         </div>
     </div>
     </div>
-    <script src="../scripts/profile_manegement.js"></script>
+    <script src="../scripts/profile_management.js"></script>
 </body>
 
 </html>
