@@ -28,9 +28,15 @@
                 <input id="profile_fieldLName" type="text" maxlength="50" placeholder="">
                 <hr class="profile_hr" />
             </div>
-            <div class="profile_input">
-                <label id="profile_labelHeight">Height</label>
-                <input id="profile_fieldHeight" type="text" maxlength="8" placeholder="">
+            <div class="profile_input profile_input_height">
+                <div class="profile_feet">
+                    <label id="profile_labelHeightFt">Height in ft</label>
+                    <input id="profile_fieldHeightFt" type="text" maxlength="8" placeholder="">
+                </div>
+                <div class="profile_inches">
+                    <label id="profile_labelHeightIn">and inches</label>
+                    <input id="profile_fieldHeightIn" type="text" maxlength="8" placeholder="">
+                </div>
                 <hr class="profile_hr" />
             </div>
             <div class="profile_input">
@@ -52,8 +58,8 @@
                 <button class="submit_profile_info" onclick="ProfileManager.changeInfo()">SUBMIT</button>
             </div>
             <div id="WIO_score_section">
-                <h3>BMI</h3>
-                <h2 id="WIO_score">...</h2>
+                <div id="profile_body_mass_index"></div>
+                <h2>Your BMI</h2>
             </div>
         </div>
     </div>

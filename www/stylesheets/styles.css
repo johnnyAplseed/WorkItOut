@@ -33,15 +33,20 @@ body {
     }
 }
 
-@media (min-width: 320px) and (max-width: 640px) {}
+@media (min-width: 320px) and (max-width: 640px) {
+}
 
-@media (min-width: 641px) and (max-width: 767px) {}
+@media (min-width: 641px) and (max-width: 767px) {
+}
 
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+}
 
-@media (min-width: 1224px) and (max-width: 1823px) {}
+@media (min-width: 1224px) and (max-width: 1823px) {
+}
 
-@media (min-width: 1824px) {}
+@media (min-width: 1824px) {
+}
 
 #banner {
     background-color: rgb(48, 48, 48);
@@ -195,7 +200,8 @@ button {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-#submit_button, #cancel_button {
+#submit_button,
+#cancel_button {
     width: 50%;
     height: 3rem;
     color: rgb(48, 48, 48);
@@ -223,7 +229,9 @@ h5 {
     color: rgb(48, 48, 48);
 }
 
-#add_exercise, #add_progress, .add_calorie_item {
+#add_exercise,
+#add_progress,
+.add_calorie_item {
     width: 100%;
     height: 3rem;
     color: rgb(48, 48, 48);
@@ -277,7 +285,13 @@ h5 {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-.add_unit_water, #add_unit_water, #subtract_unit_water, #add_unit_calories, #subtract_unit_calories, #add_unit_timer, #subtract_unit_timer {
+.add_unit_water,
+#add_unit_water,
+#subtract_unit_water,
+#add_unit_calories,
+#subtract_unit_calories,
+#add_unit_timer,
+#subtract_unit_timer {
     width: 60%;
     height: 3rem;
     margin: 1rem 20%;
@@ -289,7 +303,8 @@ h5 {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-img, #index_image {
+img,
+#index_image {
     border-radius: 10px;
 }
 
@@ -323,7 +338,10 @@ textarea {
     padding: 2rem;
 }
 
-#water_score, #calorie_score, #set_calories, #timer_amount {
+#water_score,
+#calorie_score,
+#set_calories,
+#timer_amount {
     color: rgb(48, 48, 48);
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-size: 2rem;
@@ -332,6 +350,22 @@ textarea {
 .profile_input {
     margin: 1.5rem 0 0 0;
     width: 100%;
+    /* Take \/ this out to make form nice and clean */
+    /* background-color: #555; */
+}
+
+.profile_feet {
+    width: 50%;
+    float: left;
+    display: block;
+}
+.profile_inches {
+    width: 50%;
+    float: right;
+}
+
+.profile_fieldHeightFt {
+    width: 50%;
 }
 
 .profile_label {
@@ -351,11 +385,17 @@ textarea {
     /*align-self: center;*/
 }
 
+.profile_body_mass_index {
+    font-size: 4rem;
+    color: green;
+}
+
 .add_calorie_page_hr {
     margin: 2rem 0 0 0;
 }
 
-input, label {
+input,
+label {
     border: 0;
     display: block;
     align-items: center;
@@ -390,17 +430,20 @@ input[type="text"]:focus {
     height: 3rem;
 }
 
-.header_result>.left, .header_result>.center, .header_result>.right {
+.header_result > .left,
+.header_result > .center,
+.header_result > .right {
     float: left;
     height: 100%;
 }
 
-.header_result>.left {
+.header_result > .left {
     width: 7rem;
     text-align: left;
 }
 
-.header_result>.center, .header_result>.right {
+.header_result > .center,
+.header_result > .right {
     width: calc((100% - 7rem) / 2);
     text-align: end;
 }
@@ -409,7 +452,8 @@ input[type="text"]:focus {
     height: 4rem;
 }
 
-.header_result.header-top>.center, .header_result.header-top>.right {
+.header_result.header-top > .center,
+.header_result.header-top > .right {
     text-align: center;
     font-size: 1.2rem;
     padding: 1.4rem 0rem;
