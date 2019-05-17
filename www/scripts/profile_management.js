@@ -31,7 +31,7 @@ var ProfileManager = (function () {
         document.getElementById("profile_fieldAge").value = ifCheck(profile.fAge);
         document.getElementById("profile_fieldBodyfat").value =
             ifCheck(profile.fBodyFat);
-        document.getElementById("profile_body_mass_index").textContent = ifCheck(profile.fBodyMassIndex);
+        document.getElementById("profile_body_mass_index").textContent = Math.round(profile.fBodyMassIndex * 100) / 100//String(profile.fBodyMassIndex).substr(0, 6);
     };
 
     displayinfo(ifCheck(this.savedProfileInfo));
@@ -49,12 +49,19 @@ var ProfileManager = (function () {
             fWeight: document.getElementById("profile_fieldWeight").value,
             fAge: document.getElementById("profile_fieldAge").value,
             fBodyFat: document.getElementById("profile_fieldBodyfat").value,
-            fBodyMassIndex: bodyMassIndexCalc
+            fBodyMassIndex: 0
         };
 
+        var tmpheight = parseFloat(tempInfo.fHeightFt * 12) + parseFloat(tempInfo.fHeightIn);
+        var tmpweight = parseFloat(tempInfo.fWeight);
+
+        var bmiCalc = ((tmpweight / (tmpheight * tmpheight)) * 703);
+        console.log("ChangeInfo: ", ++consoleKey, bmiCalc);
+        this.tempInfo.fBodyMassIndex = String(bmiCalc);
         // this.displayInfo(tempInfo);
-        console.log(JSON.stringify(this.tempInfo));
+        console.log(this.tempInfo);
         this.saveInfo(storageKey, JSON.stringify(this.tempInfo));
+        displayinfo(ifCheck(this.tempInfo));
     };
 
     return {

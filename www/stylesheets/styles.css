@@ -385,8 +385,8 @@ textarea {
     /*align-self: center;*/
 }
 
-.profile_body_mass_index {
-    font-size: 4rem;
+#profile_body_mass_index {
+    font-size: 3rem;
     color: green;
 }
 
