@@ -13,6 +13,27 @@ var ProfileManager = (function () {
 
     var bodyMassIndexCalc = ((weight / (height * height)) * 703);
 
+    var bmiClass = document.getElementById("profile_body_mass_index");
+
+    var setBmiClassColor = (tempBmiCalc) => {
+        if (tempBmiCalc >= 30.00 || tempBmiCalc < 15) {
+            console.log("Downloading this app is a great start but you may need to see a professional about weight gain or loss. Keep your chin up!")
+            //color : red
+            bmiClass.style.color = '#9e0000';
+        } else if (tempBmiCalc >= 25.00) {
+            console.log("Way to go, Try creating and testing a custom workout!")
+            //color : yellow
+            bmiClass.style.color = '#f4d142';
+        } else if (tempBmiCalc >= 18.50) {
+            console.log("Good job! BMI isnt everything though, make sure you exercise regularly")
+            //color : green
+            bmiClass.style.color = 'green';
+        } else {
+            console.log("Uh Oh");
+            //color : red
+            bmiClass.style.color = '#f4d142';
+        };
+    }
 
     console.log(++consoleKey, bodyMassIndexCalc);
 
@@ -32,6 +53,7 @@ var ProfileManager = (function () {
         document.getElementById("profile_fieldBodyfat").value =
             ifCheck(profile.fBodyFat);
         document.getElementById("profile_body_mass_index").textContent = Math.round(profile.fBodyMassIndex * 100) / 100//String(profile.fBodyMassIndex).substr(0, 6);
+        setBmiClassColor(Math.round(profile.fBodyMassIndex * 100) / 100);
     };
 
     displayinfo(ifCheck(this.savedProfileInfo));
@@ -58,6 +80,8 @@ var ProfileManager = (function () {
         var bmiCalc = ((tmpweight / (tmpheight * tmpheight)) * 703);
         console.log("ChangeInfo: ", ++consoleKey, bmiCalc);
         this.tempInfo.fBodyMassIndex = String(bmiCalc);
+
+
         // this.displayInfo(tempInfo);
         console.log(this.tempInfo);
         this.saveInfo(storageKey, JSON.stringify(this.tempInfo));
@@ -67,7 +91,8 @@ var ProfileManager = (function () {
     return {
         displayInfo: this.displayInfo,
         changeInfo: this.changeInfo,
-        saveInfo: this.saveInfo
+        saveInfo: this.saveInfo,
+        setBmiClassColor: this.setBmiClassColor
 
     };
 })();
