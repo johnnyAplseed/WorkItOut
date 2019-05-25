@@ -489,6 +489,7 @@ input[type="text"]:focus {
 }
 
 .set_exercise {
+    display: block;
     float: right;
     width: calc(calc(70% / 4) - 0.2rem);
     height: 100%;
