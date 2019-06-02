@@ -489,7 +489,7 @@ input[type="text"]:focus {
 }
 
 .set_exercise {
-    display: block;
+    /* display: block; */
     float: right;
     width: calc(calc(70% / 4) - 0.2rem);
     height: 100%;
@@ -503,4 +503,11 @@ input[type="text"]:focus {
     line-height: 3rem;
     /* border-style: outset; */
     background-color: #fafafa;
+    color: rgb(48, 48, 48);
+    transition: background-color 0.35s ease-in-out 0s, color 0.35s ease-in-out 0s;
+}
+
+.jp-blabla {
+    background-color: #e01d1d;
+    color: white;
 }

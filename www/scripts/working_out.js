@@ -14,19 +14,28 @@ var WorkingOutManager = (function () {
     // window.localStorage.setItem(storKey, setCounter, workoutCounter);
 
     this.getWorkoutId = () => {
-        this.workoutID = "workout" + workoutCounter + "_set" + setCounter;
-        this.currentSetButton = document.getElementById(this.workoutID);
-        currentSetButton.addEventListener("click", changeState, false);
-        setCounter++;
-        if (setCounter == 5) {
-            setCounter = 1;
-            workoutCounter++;
-        }
+        // this.workoutID = "workout" + workoutCounter + "_set" + setCounter;
+        // this.currentSetButton = document.getElementById(this.workoutID);
+        // currentSetButton.addEventListener("click", changeState, false);
+        // setCounter++;
+        // if (setCounter == 5) {
+        //     setCounter = 1;
+        //     workoutCounter++;
+        // }
     }
 
     getWorkoutId();
     // console.log(this.workoutID);
 
+    this.toggleColor = (id) => {
+        var el = document.getElementById(id);
+        if (el.classList.contains("jp-blabla")) {
+            el.classList.remove("jp-blabla");
+        } else {
+            el.classList.add("jp-blabla");
+        }
+
+    }
 
 
     function changeState() {
@@ -37,7 +46,8 @@ var WorkingOutManager = (function () {
 
 
     return {
-        changeState: changeState
+        changeState: changeState,
+        toggleColor: toggleColor
     }
 
 })();
