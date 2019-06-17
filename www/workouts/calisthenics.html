@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+    <title>Work It Out | Choose Workout</title>
+</head>
+
+<body>
+    <div id="banner">
+        <a id="banner_text_link" href="../content/home.html">Work It Out</a>
+    </div>
+    <div id="wrapper">
+        <div>
+            <img id="page_image" onclick="window.location.href='../content/home.html'"
+                src="../images/work_it_out_logo_workouts.png" alt="Work It
+                    Out logo">
+        </div>
+        <!-- Display a Timer after pressing start -->
+        <div>
+            <button id="add_exercise">START WORKOUT</button>
+        </div>
+        <div id="current_workout">
+            <!-- I want to show the weight of the rep first and then move to the number. 
+            Each button to the right of the workout name will be boolean. 
+                - The workout can be tapped to move to the next workout
+                - The weight will be shown first and WILL be tapped to display reps 
+                - The weight will be shown once you tap on the number of reps to signify that set is done
+                    - Maybe add a hyperscipt to signify which set your on or words to the right
+                - Maybe just make a button that has necessary info on it for set and rep -->
+            <div class="workout_exercise">
+                <div class="set_name">L-Sit Straight Leg</div>
+                <div class="set_exercise" id="workout1_set1" onclick="WorkingOutManager.toggleColor('workout1_set1')">TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">L-Sit One Leg Straight</div>
+                <div class="set_exercise" id="workout2_set2" onclick="WorkingOutManager.toggleColor('workout2_set2')">TF
+                </div>
+                <div class="set_exercise" id="workout2_set1" onclick="WorkingOutManager.toggleColor('workout2_set1')">TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">L-Sit Bent Legs</div>
+                <div class="set_exercise" id="workout3_set1" onclick="WorkingOutManager.toggleColor('workout3_set1')">TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Straight Raises</div>
+                <div class="set_exercise" id="workout4_set1" onclick="WorkingOutManager.toggleColor('workout4_set1')">TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Bent Raises</div>
+                <div class="set_exercise" id="workout5_set1" onclick="WorkingOutManager.toggleColor('workout5_set1')">TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Pullups</div>
+                <div class="set_exercise" id="workout6_set1" onclick="WorkingOutManager.toggleColor('workout6_set1')">TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Jump Pullups</div>
+                <div class="set_exercise" id="workout7_set1" onclick="WorkingOutManager.toggleColor('workout7_set1')">TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Pullup Holds</div>
+                <div class="set_exercise" id="workout8_set1" onclick="WorkingOutManager.toggleColor('workout8_set1')">TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Asst. Pullups</div>
+                <div class="set_exercise" id="workout9_set3" onclick="WorkingOutManager.toggleColor('workout9_set3')">TF
+                </div>
+                <div class="set_exercise" id="workout9_set2" onclick="WorkingOutManager.toggleColor('workout9_set2')">TF
+                </div>
+                <div class="set_exercise" id="workout9_set1" onclick="WorkingOutManager.toggleColor('workout9_set1')">TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Aussie Pullups</div>
+                <div class="set_exercise" id="workout10_set1" onclick="WorkingOutManager.toggleColor('workout10_set1')">
+                    TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Dips</div>
+                <div class="set_exercise" id="workout11_set1" onclick="WorkingOutManager.toggleColor('workout11_set1')">
+                    TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Jump Dips</div>
+                <div class="set_exercise" id="workout12_set1" onclick="WorkingOutManager.toggleColor('workout12_set1')">
+                    TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Dip Holds</div>
+                <div class="set_exercise" id="workout13_set1" onclick="WorkingOutManager.toggleColor('workout13_set1')">
+                    TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Asst. Dips</div>
+                <div class="set_exercise" id="workout14_set3" onclick="WorkingOutManager.toggleColor('workout14_set3')">
+                    TF
+                </div>
+                <div class="set_exercise" id="workout14_set2" onclick="WorkingOutManager.toggleColor('workout14_set2')">
+                    TF
+                </div>
+                <div class="set_exercise" id="workout14_set1" onclick="WorkingOutManager.toggleColor('workout14_set1')">
+                    TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Pushups</div>
+                <div class="set_exercise" id="workout15_set1" onclick="WorkingOutManager.toggleColor('workout15_set1')">
+                    TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Knee Pushups</div>
+                <div class="set_exercise" id="workout16_set1" onclick="WorkingOutManager.toggleColor('workout16_set1')">
+                    TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Inc. Pushups</div>
+                <div class="set_exercise" id="workout17_set1" onclick="WorkingOutManager.toggleColor('workout17_set1')">
+                    TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Pistol Squats, ind.</div>
+                <div class="set_exercise" id="workout18_set2" onclick="WorkingOutManager.toggleColor('workout18_set2')">
+                    TF
+                </div>
+                <div class="set_exercise" id="workout18_set1" onclick="WorkingOutManager.toggleColor('workout18_set1')">
+                    TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Pistol Squat 2</div>
+                <div class="set_exercise" id="workout19_set2" onclick="WorkingOutManager.toggleColor('workout19_set2')">
+                    TF
+                </div>
+                <div class="set_exercise" id="workout19_set1" onclick="WorkingOutManager.toggleColor('workout19_set1')">
+                    TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Jump Squats</div>
+                <div class="set_exercise" id="workout20_set1" onclick="WorkingOutManager.toggleColor('workout20_set1')">
+                    TF
+                </div>
+            </div>
+            <div class="workout_exercise">
+                <div class="set_name">Body Squats</div>
+                <div class="set_exercise" id="workout21_set1" onclick="WorkingOutManager.toggleColor('workout21_set1')">
+                    TF
+                </div>
+            </div>
+            <button onclick="WorkingOutManager.changeState()" id="add_exercise">COMPLETE WORKOUT</button>
+        </div>
+    </div>
+
+    <script src="../scripts/working_out.js"></script>
+</body>
+
+</html>
