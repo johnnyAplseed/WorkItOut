@@ -446,9 +446,12 @@ input[type="text"]:focus {
 
 .workout_exercise {
     background-color: #c4c4c4;
-    height: 3rem;
+    height: 3.5rem;
+    margin: .5rem 0;
     width: auto;
     align-content: center;
+    border-bottom-style: solid;
+    border-bottom-color: #555;
 }
 
 .set_name {
@@ -466,19 +469,37 @@ input[type="text"]:focus {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+.workout_set {
+    color: #fafafa;
+    background-color: #990000;
+    /* float: left; */
+    height: 100%;
+    padding: 0 0.2rem;
+    width: 100%;
+    text-align: center;
+    vertical-align: center;
+    line-height: 3rem;
+    border-radius: 12px;
+    font-size: 2rem;
+    transition: all 0.1s ease-in-out 0s;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.workout_set.active {
+    background-color: #fafafa;
+}
+
 .set_exercise {
     /* display: block; */
     float: right;
     width: calc(calc(70% / 4) - 0.2rem);
     height: 100%;
     padding: 0 0.1rem;
-    margin: 0 0.1rem;
-    border-radius: 50%;
-    /* transform: rotate(-25deg);
-    text-transform: rotate(25deg); */
+    margin: 0 0.rem;
+    border-radius: 10px;
     text-align: center;
     vertical-align: center;
-    line-height: 3rem;
+    line-height: 3.5rem;
     /* border-style: outset; */
     background-color: #fafafa;
     color: rgb(48, 48, 48);
@@ -486,6 +507,11 @@ input[type="text"]:focus {
 }
 
 .jp-blabla {
-    background-color: #e01d1d;
+    background-color: #990000;
     color: white;
+}
+
+.exercise_transition {
+    background-color: #990000;
+    transition: background-color 0.35s ease-in-out 0s, color 0.35s ease-in-out 0s;
 }

@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 var WorkingOutManager = (function () {
 
     this.setCounter = 1;
@@ -37,6 +30,21 @@ var WorkingOutManager = (function () {
 
     }
 
+    this.lSitArray = ["STRAIGHT LEG HOLD", "SINGLE STRAIGHT LEG", "BENT KNEE HOLD", "STRAIGHT LEG RAISES", "BENT KNEE RAISES"];
+    var counter = 0;
+
+    this.exerciseChanges = (id) => {
+        var exs = document.getElementById(id);
+        console.log(this.lSitArray[counter]);
+
+        exs.classList.add("active");
+        let self = this;
+        setTimeout(() => {
+            exs.innerText = counter === lSitArray.length ? "Finished: L-SITS" : this.lSitArray[counter++];
+            exs.classList.remove("active")
+        }, 100) //after 100 milliseconds change the background to black.
+
+    }
 
     function changeState() {
         currentSetButton.style.background = "#e01d1d"
@@ -44,10 +52,10 @@ var WorkingOutManager = (function () {
         console.log("Do something first then add 1 to the number to get: " + this.workoutID);
     }
 
-
     return {
         changeState: changeState,
-        toggleColor: toggleColor
+        toggleColor: toggleColor,
+        exerciseChanges: exerciseChanges
     }
 
 })();
@@ -55,7 +63,33 @@ var WorkingOutManager = (function () {
 
 
 
-
+// <div class="workout_exercise">
+//                 <div class="set_name">L-Sit Straight Leg</div>
+//                 <div class="set_exercise" id="workout1_set1" onclick="WorkingOutManager.toggleColor('workout1_set1')">TF
+//                 </div>
+//             </div>
+//             <div class="workout_exercise">
+//                 <div class="set_name">L-Sit One Leg Straight</div>
+//                 <div class="set_exercise" id="workout2_set2" onclick="WorkingOutManager.toggleColor('workout2_set2')">TF
+//                 </div>
+//                 <div class="set_exercise" id="workout2_set1" onclick="WorkingOutManager.toggleColor('workout2_set1')">TF
+//                 </div>
+//             </div>
+//             <div class="workout_exercise">
+//                 <div class="set_name">L-Sit Bent Legs</div>
+//                 <div class="set_exercise" id="workout3_set1" onclick="WorkingOutManager.toggleColor('workout3_set1')">TF
+//                 </div>
+//             </div>
+//             <div class="workout_exercise">
+//                 <div class="set_name">Straight Raises</div>
+//                 <div class="set_exercise" id="workout4_set1" onclick="WorkingOutManager.toggleColor('workout4_set1')">TF
+//                 </div>
+//             </div>
+//             <div class="workout_exercise">
+//                 <div class="set_name">Bent Raises</div>
+//                 <div class="set_exercise" id="workout5_set1" onclick="WorkingOutManager.toggleColor('workout5_set1')">TF
+//                 </div>
+//             </div>
 
 
 
