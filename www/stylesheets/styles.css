@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Impact");
+
 * {
     box-sizing: border-box;
 }
@@ -33,15 +35,20 @@ body {
     }
 }
 
-@media (min-width: 320px) and (max-width: 640px) {}
+@media (min-width: 320px) and (max-width: 640px) {
+}
 
-@media (min-width: 641px) and (max-width: 767px) {}
+@media (min-width: 641px) and (max-width: 767px) {
+}
 
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+}
 
-@media (min-width: 1224px) and (max-width: 1823px) {}
+@media (min-width: 1224px) and (max-width: 1823px) {
+}
 
-@media (min-width: 1824px) {}
+@media (min-width: 1824px) {
+}
 
 #banner {
     background-color: rgb(48, 48, 48);
@@ -195,7 +202,8 @@ button {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-#submit_button, #cancel_button {
+#submit_button,
+#cancel_button {
     width: 50%;
     height: 3rem;
     color: rgb(48, 48, 48);
@@ -223,7 +231,9 @@ h5 {
     color: rgb(48, 48, 48);
 }
 
-#add_exercise, #add_progress, .add_calorie_item {
+#add_exercise,
+#add_progress,
+.add_calorie_item {
     width: 100%;
     height: 3rem;
     color: rgb(48, 48, 48);
@@ -232,6 +242,17 @@ h5 {
     font-size: 1.25rem;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     margin: 1rem 0 1rem 0;
+}
+
+.start_end_workout {
+    width: 100%;
+    height: 3rem;
+    color: rgb(48, 48, 48);
+    border-radius: 10px;
+    background-color: #fafafa;
+    font-size: 1.25rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    margin: 0.5rem 0;
 }
 
 .add_exercise {
@@ -277,7 +298,13 @@ h5 {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-.add_unit_water, #add_unit_water, #subtract_unit_water, #add_unit_calories, #subtract_unit_calories, #add_unit_timer, #subtract_unit_timer {
+.add_unit_water,
+#add_unit_water,
+#subtract_unit_water,
+#add_unit_calories,
+#subtract_unit_calories,
+#add_unit_timer,
+#subtract_unit_timer {
     width: 60%;
     height: 3rem;
     margin: 1rem 20%;
@@ -289,7 +316,8 @@ h5 {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-img, #index_image {
+img,
+#index_image {
     border-radius: 10px;
 }
 
@@ -323,7 +351,10 @@ textarea {
     padding: 2rem;
 }
 
-#water_score, #calorie_score, #set_calories, #timer_amount {
+#water_score,
+#calorie_score,
+#set_calories,
+#timer_amount {
     color: rgb(48, 48, 48);
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-size: 2rem;
@@ -332,8 +363,13 @@ textarea {
 .profile_input {
     margin: 1.5rem 0 0 0;
     width: 100%;
+    font-size: 2rem;
     /* Take \/ this out to make form nice and clean */
     /* background-color: #555; */
+}
+
+.profile_input_field {
+    font-size: 1.5rem;
 }
 
 .profile_feet {
@@ -377,7 +413,8 @@ textarea {
     margin: 2rem 0 0 0;
 }
 
-input, label {
+input,
+label {
     border: 0;
     display: block;
     align-items: center;
@@ -412,17 +449,20 @@ input[type="text"]:focus {
     height: 3rem;
 }
 
-.header_result>.left, .header_result>.center, .header_result>.right {
+.header_result > .left,
+.header_result > .center,
+.header_result > .right {
     float: left;
     height: 100%;
 }
 
-.header_result>.left {
+.header_result > .left {
     width: 7rem;
     text-align: left;
 }
 
-.header_result>.center, .header_result>.right {
+.header_result > .center,
+.header_result > .right {
     width: calc((100% - 7rem) / 2);
     text-align: end;
 }
@@ -431,7 +471,8 @@ input[type="text"]:focus {
     height: 4rem;
 }
 
-.header_result.header-top>.center, .header_result.header-top>.right {
+.header_result.header-top > .center,
+.header_result.header-top > .right {
     text-align: center;
     font-size: 1.2rem;
     padding: 1.4rem 0rem;
@@ -446,8 +487,8 @@ input[type="text"]:focus {
 
 .workout_exercise {
     background-color: #c4c4c4;
-    height: 3.5rem;
-    margin: .5rem 0;
+    height: 8rem;
+    margin: 0.5rem 0;
     width: auto;
     align-content: center;
     border-bottom-style: solid;
@@ -473,20 +514,34 @@ input[type="text"]:focus {
     color: #fafafa;
     background-color: #990000;
     /* float: left; */
-    height: 100%;
+    height: calc(100% - 2.5rem);
     padding: 0 0.2rem;
     width: 100%;
     text-align: center;
     vertical-align: center;
-    line-height: 3rem;
+    line-height: 2.7rem;
     border-radius: 12px;
     font-size: 2rem;
     transition: all 0.1s ease-in-out 0s;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+.workoutSetNote {
+    width: 100%;
+    height: 2rem;
+    border-radius: 10px;
+}
+
 .workout_set.active {
     background-color: #fafafa;
+}
+.workout_set.complete {
+    background-color: #333;
+}
+
+.workout_description {
+    font-size: 2rem;
+    padding: 0 2rem;
 }
 
 .set_exercise {
@@ -495,7 +550,7 @@ input[type="text"]:focus {
     width: calc(calc(70% / 4) - 0.2rem);
     height: 100%;
     padding: 0 0.1rem;
-    margin: 0 0.rem;
+    margin: 0 0rem;
     border-radius: 10px;
     text-align: center;
     vertical-align: center;

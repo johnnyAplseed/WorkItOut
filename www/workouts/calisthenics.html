@@ -1,44 +1,104 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width" />
 
-<head>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
-    <title>Work It Out | Choose Workout</title>
-</head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+        <title>Work It Out | Choose Workout</title>
+    </head>
 
-<body>
-    <div id="banner">
-        <a id="banner_text_link" href="../content/home.html">Work It Out</a>
-    </div>
-    <div id="wrapper">
-        <div>
-            <img id="page_image" onclick="window.location.href='../content/home.html'"
-                src="../images/work_it_out_logo_workouts.png" alt="Work It
-                    Out logo">
+    <body>
+        <div id="banner">
+            <a id="banner_text_link" href="../content/home.html">Work It Out</a>
         </div>
-        <!-- Display a Timer after pressing start -->
-        <div>
-            <button id="add_exercise">START WORKOUT</button>
-        </div>
-        <div id="current_workout">
-            <!-- I want to show the weight of the rep first and then move to the number. 
+        <div id="wrapper">
+            <div>
+                <p class="workout_description">This calisthenic workout is designed to work
+                     your full body to the point of failure. I found 
+                     the workout from a video, modified it a little, and I really enjoy the full-body burn 
+                     I get from it. It is meant to be 
+                      performed with as little break time as possible.
+                    </br>
+                    <a style="color: #990000" href="https://youtu.be/kIVxdIWy7Eo" target="window">*Check out the original video*</a>
+                </p>
+            </div>
+            <!-- Display a Timer after pressing start -->
+            <div>
+                <button class="start_end_workout">START WORKOUT</button>
+            </div>
+            <div id="current_workout">
+                <!-- I want to show the weight of the rep first and then move to the number. 
             Each button to the right of the workout name will be boolean. 
                 - The workout can be tapped to move to the next workout
                 - The weight will be shown first and WILL be tapped to display reps 
                 - The weight will be shown once you tap on the number of reps to signify that set is done
                     - Maybe add a hyperscipt to signify which set your on or words to the right
                 - Maybe just make a button that has necessary info on it for set and rep -->
-            <div class="workout_exercise">
-                <div class="workout_set" id="workout1" onclick="WorkingOutManager.exerciseChanges('workout1')">
-                    L-SIT REGRESSIONS
+                <div class="workout_exercise">
+                    <div class="workout_set" id="workout1"
+                        onclick="WorkingOutManager.exerciseChanges('workout1')">
+                        L-SIT REGRESSIONS - START
+                    </div>
+                    <div>
+                        <input class="workoutSetNote" placeholder="add notes on your workout.."></input>
+                    </div>
                 </div>
-            </div>
-            <button onclick="WorkingOutManager.changeState()" id="add_exercise">COMPLETE WORKOUT</button>
-        </div>
-    </div>
 
-    <script src="../scripts/working_out.js"></script>
-</body>
+                <div class="workout_exercise">
+                    <div class="workout_set" id="workout2"
+                        onclick="WorkingOutManager.exerciseChanges('workout2')">
+                        PULLUP REGRESSIONS - START
+                    </div>
+                    <div>
+                        <input class="workoutSetNote" placeholder="add notes on your workout.."></input>
+                    </div>
+                </div>
+
+                <div class="workout_exercise">
+                    <div class="workout_set" id="workout3"
+                        onclick="WorkingOutManager.exerciseChanges('workout3')">
+                        DIP REGRESSIONS - START
+                    </div>
+                    <div>
+                        <input class="workoutSetNote" placeholder="add notes on your workout.."></input>
+                    </div>
+                </div>
+
+                <div class="workout_exercise">
+                    <div class="workout_set" id="workout4"
+                        onclick="WorkingOutManager.exerciseChanges('workout4')">
+                        PUSHUP REGRESSIONS - START
+                    </div>
+                    <div>
+                        <input class="workoutSetNote" placeholder="add notes on your workout.."></input>
+                    </div>
+                </div>
+
+                <div class="workout_exercise">
+                    <div class="workout_set" id="workout5"
+                        onclick="WorkingOutManager.exerciseChanges('workout5')">
+                        SQUAT REGRESSIONS - START
+                    </div>
+                    <div>
+                        <input class="workoutSetNote" placeholder="add notes on your workout.."></input>
+                    </div>
+                </div>
+
+                <div class="workout_exercise">
+                    <div class="workout_set" id="workout6"
+                        onclick="WorkingOutManager.exerciseChanges('workout6')">
+                        CARDIO AND COOLDOWN - START
+                    </div>
+                    <div>
+                        <input class="workoutSetNote" placeholder="add notes on your workout.."></input>
+                    </div>
+                </div>
+                <button onclick="window.location.href = '../content/home.html';"
+                    class="start_end_workout">COMPLETE WORKOUT</button>
+            </div>
+        </div>
+
+        <script src="../scripts/working_out.js"></script>
+    </body>
 
 </html>
