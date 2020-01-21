@@ -1,62 +1,90 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width" />
 
-<head>
-    <title>Work It Out | Create Workout</title>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
-</head>
+    <head>
+        <title>Work It Out | Create Workout</title>
+        <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+    </head>
 
-<body>
+    <body>
 
-    <div id="banner">
-        <!-- <img src="BackArrow.jpg" alt="The back button" /> -->
-        <a id="banner_text_link" href="../content/home.html">Work It Out</a>
-    </div>
+        <div id="banner">
+            <!-- <img src="BackArrow.jpg" alt="The back button" /> -->
+            <a id="banner_text_link" href="../content/home.html">Work It Out</a>
+        </div>
 
-    <div id="wrapper">
-        <div>
-
-            <div id="name_workout">
-                <h1>New Custom Workout:</h1>
-                <input type="text" name="new_workout_name" maxlength="40" placeholder="Name of workout...">
-            </div>
-
-            <div id="typeof_workout">
-                <h2>Workout type:</h2>
-                <select id="workout_type">
-                    <option value="Biking">Biking</option>
-                    <option value="Cardio">Cardio</option>
-                    <option value="Circuit_Training">Circuit Training</option>
-                    <option value="Crossfit">Crossfit</option>
-                    <option value="HIIT">H.I.I.T.</option>
-                    <option value="Running">Running</option>
-                    <option value="Sport">Sport</option>
-                    <option value="Strength">Strength</option>
-                    <option value="Swimming">Swimming</option>
-                    <option value="Weight_Training">Weight Training</option>
-                    <option value="Other">Other...</option>
-                </select>
-            </div>
-            <hr>
-            <div id="exercises_for_workout">
-
-            </div>
+        <div id="wrapper">
             <div>
-                <br>
-                <button class="add_exercise" onclick="AddWorkoutManager.subtractExercise()"> - 1</button>
-                <button class="add_exercise" onclick="AddWorkoutManager.addExercise()"> + 1</button>
-                <br>
+
+                <div id="name_workout">
+                    <h1>New Custom Workout:</h1>
+                    <input type="text" name="new_workout_name" maxlength="40"
+                        placeholder="Name of workout...">
+                </div>
+
+                <div id="typeof_workout">
+                    <h2>Workout type:</h2>
+                    <select id="workout_type">
+                        <option value="Biking">Biking</option>
+                        <option value="Cardio">Cardio</option>
+                        <option value="Circuit_Training">Circuit Training</option>
+                        <option value="Crossfit">Crossfit</option>
+                        <option value="HIIT">H.I.I.T.</option>
+                        <option value="Running">Running</option>
+                        <option value="Sport">Sport</option>
+                        <option value="Strength">Strength</option>
+                        <option value="Swimming">Swimming</option>
+                        <option value="Weight_Training">Weight Training</option>
+                        <option value="Other">Other...</option>
+                    </select>
+                </div>
+                <hr>
+                <div id="new_workout">
+                    <!-- <table id="new_workout_table">
+                        <caption id="new_workout_table_name">New
+                            Workout</caption>
+                        <tr class="new_workout_row" id="row_headers">
+                            <th class="new_workout_data new_workout_headers">Exercise</th>
+                            <th class="new_workout_data new_workout_headers">Set</th>
+                            <th class="new_workout_data new_workout_headers">Weight</th>
+                            <th class="new_workout_data new_workout_headers">Reps</th>
+                            <th class="new_workout_data new_workout_headers">Status</th>
+                            <th class="new_workout_data new_workout_headers">Notes</th>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="true">Name exercise...</td>
+                            <td class="new_workout_data" contenteditable="true">sets</td>
+                            <td class="new_workout_data" contenteditable="true">lbs</td>
+                            <td class="new_workout_data" contenteditable="true">reps</td>
+                            <td class="new_workout_data" contenteditable="true">tap</td>
+                            <td class="new_workout_data" contenteditable="true">tap to add</td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="true">Name exercise...</td>
+                            <td class="new_workout_data" contenteditable="true">sets</td>
+                            <td class="new_workout_data" contenteditable="true">lbs</td>
+                            <td class="new_workout_data" contenteditable="true">reps</td>
+                            <td class="new_workout_data" contenteditable="true">tap</td>
+                            <td class="new_workout_data" contenteditable="true">tap to add</td>
+                        </tr>
+                    </table> -->
+                </div>
+                <div>
+                    <br>
+                    <button class="add_exercise" onclick="AddWorkoutTableManager.SubtractExercise()"> - 1</button>
+                    <button class="add_exercise" onclick="AddWorkoutTableManager.AddExercise()"> + 1</button>
+                    <br>
+                </div>
+
             </div>
-
+            <div class="cancel_submit">
+                <button id="cancel_button" onclick="window.location.href='../content/workouts.html'">Cancel</button>
+                <button id="submit_button" type="submit" onclick="window.location.href='../content/workouts.html'">Submit</button>
+            </div>
+            <script src="../scripts/add_workout_table.js"></script>
         </div>
-        <div class="cancel_submit">
-            <button id="cancel_button" onclick="window.location.href='../content/workouts.html'">Cancel</button>
-            <input id="submit_button" type="submit" name="submit_new_exercise">
-        </div>
-        <script src="../scripts/add_workout_management.js"></script>
-    </div>
 
-</body>
+    </body>
 
 </html>

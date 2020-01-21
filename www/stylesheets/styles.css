@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Impact");
+/* @import url("https://www.w3schools.com/w3css/4/w3.css"); */
 
 * {
     box-sizing: border-box;
@@ -12,6 +13,7 @@ body {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     /* background-image: url("../images/webBackground.jpg"); */
     background-attachment: fixed;
+    background-image: linear-gradient(to bottom right, yellow);
     text-align: center;
     margin: 0;
     padding: 0;
@@ -35,20 +37,15 @@ body {
     }
 }
 
-@media (min-width: 320px) and (max-width: 640px) {
-}
+@media (min-width: 320px) and (max-width: 640px) {}
 
-@media (min-width: 641px) and (max-width: 767px) {
-}
+@media (min-width: 641px) and (max-width: 767px) {}
 
-@media (min-width: 768px) and (max-width: 1024px) {
-}
+@media (min-width: 768px) and (max-width: 1024px) {}
 
-@media (min-width: 1224px) and (max-width: 1823px) {
-}
+@media (min-width: 1224px) and (max-width: 1823px) {}
 
-@media (min-width: 1824px) {
-}
+@media (min-width: 1824px) {}
 
 #banner {
     background-color: rgb(48, 48, 48);
@@ -135,6 +132,7 @@ a:active {
 
 body {
     background-color: #c4c4c4;
+    background-image: linear-gradient(to bottom right, #797979, #ffffff);
 }
 
 #wrapper {
@@ -142,7 +140,7 @@ body {
     padding: 50px 0px;
     align-items: center;
     justify-content: center;
-    background-color: #c4c4c4;
+    /* background-color: #c4c4c4;background-image: linear-gradient(to bottom right, #c4c4c4, #ffffff); */
     margin: auto;
     width: 95%;
     height: 100%;
@@ -174,12 +172,6 @@ hr {
     width: 100%;
 }
 
-.submit_profile_info {
-    width: 100%;
-    margin: 1rem 0;
-    border-width: 0.05rem;
-}
-
 button {
     display: block;
     height: 3rem;
@@ -188,6 +180,16 @@ button {
     background-color: #fafafa;
     font-size: 1.75rem;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+table {}
+
+
+.submit_profile_info,
+.submit_button {
+    width: 100%;
+    margin: 1rem 0;
+    border-width: 0.05rem;
 }
 
 .home_page_button {
@@ -211,6 +213,7 @@ button {
     background-color: #fafafa;
     font-size: 1.25rem;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    margin: 0.5rem 25%;
 }
 
 .cancel_submit {
@@ -231,7 +234,6 @@ h5 {
     color: rgb(48, 48, 48);
 }
 
-#add_exercise,
 #add_progress,
 .add_calorie_item {
     width: 100%;
@@ -263,7 +265,7 @@ h5 {
     background-color: #fafafa;
     font-size: 1.25rem;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    margin: 0.5rem 0;
+    margin: 0.5rem 25%;
 }
 
 .add_item {
@@ -383,7 +385,11 @@ textarea {
     float: right;
 }
 
-.profile_fieldHeightFt {
+#profile_fieldHeightFt {
+    width: 50%;
+}
+
+#profile_fieldHeightIn {
     width: 50%;
 }
 
@@ -443,36 +449,41 @@ input[type="text"]:focus {
     padding: 0rem 3rem;
 }
 
+#progress_card {
+    color: red;
+}
+
 .header_result {
     position: relative;
     width: 100%;
     height: 3rem;
 }
 
-.header_result > .left,
-.header_result > .center,
-.header_result > .right {
+.header_result>.left,
+.header_result>.center,
+.header_result>.right {
     float: left;
     height: 100%;
 }
 
-.header_result > .left {
+.header_result>.left {
     width: 7rem;
     text-align: left;
+    padding: 0.8rem 0 0 0;
 }
 
-.header_result > .center,
-.header_result > .right {
+.header_result>.center,
+.header_result>.right {
     width: calc((100% - 7rem) / 2);
-    text-align: end;
+    text-align: middle;
 }
 
 .header_result.header-top {
     height: 4rem;
 }
 
-.header_result.header-top > .center,
-.header_result.header-top > .right {
+.header_result.header-top>.center,
+.header_result.header-top>.right {
     text-align: center;
     font-size: 1.2rem;
     padding: 1.4rem 0rem;
@@ -535,12 +546,13 @@ input[type="text"]:focus {
 .workout_set.active {
     background-color: #fafafa;
 }
+
 .workout_set.complete {
     background-color: #333;
 }
 
 .workout_description {
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding: 0 2rem;
 }
 
@@ -569,4 +581,74 @@ input[type="text"]:focus {
 .exercise_transition {
     background-color: #990000;
     transition: background-color 0.35s ease-in-out 0s, color 0.35s ease-in-out 0s;
+}
+
+#new_workout {
+    width: calc(100% - 1 rem);
+}
+
+#new_workout_table {
+    width: 100%;
+    border: 1px black solid;
+    border-collapse: collapse;
+    background-color: #ffffcc;
+}
+
+#workout_table {
+    width: 100%;
+    border: 1px black solid;
+    border-collapse: collapse;
+    background-color: #ffffcc;
+}
+
+.new_workout_row {
+    height: 2rem;
+    border: 1px black solid;
+    border-collapse: collapse;
+    background-color: #ffffcc;
+    overflow: hidden;
+    transition: height 0.25s ease-in-out;
+}
+
+.new_workout_row.hidden {
+    height: 0rem;
+}
+
+.new_workout_data {
+    height: 2rem;
+    border: 1px black solid;
+    border-collapse: collapse;
+    background-color: #ffffe6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#new_workout_table_name {
+    margin-bottom: 1.5rem;
+}
+
+.new_workout_headers {
+    background-color: #990000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+#new_workout_notes {
+    margin: 0;
+    margin-top: 1rem;
+    width: 100%;
+    height: 5rem;
+}
+
+#BruceLeeImage {
+    width: 100%;
+}
+
+#WorkoutTite {
+    font-size: 2rem;
+}
+
+.rest_row {
+    background-color: #990000;
+    color: white;
 }

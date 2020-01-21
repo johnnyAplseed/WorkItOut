@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width" />
 
-<head>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
-    <title>Work It Out | Track Progress</title>
-</head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+        <title>Work It Out | Track Progress</title>
+    </head>
 
-<body>
-    <div id="banner">
-        <a id="banner_text_link" href="../content/home.html">Work It Out</a>
-    </div>
-    <div id="wrapper">
-        <div id="page_image_div">
-            <!-- Default image will be the logo. Once a user uploads an image it will take the image of their choice. -->
-            <img id="page_image" onclick="window.location.href='../content/home.html'"
-                src="../images/work_it_out_logo.png" alt="Work It Out logo">
-            <div id="upload_image">
-                <h2>Add Images</h2>
-                <input type="file" name="upload_progress_image" accept="image/*" multiple />
+    <body>
+        <div id="banner">
+            <a id="banner_text_link" href="../content/home.html">Work It Out</a>
+        </div>
+        <div id="wrapper">
+            <div id="page_image_div">
+                <!-- Default image will be the logo. Once a user uploads an image it will take the image of their choice. -->
+                <img id="page_image"
+                    onclick="window.location.href='../content/home.html'"
+                    src="../images/work_it_out_logo.png" alt="Work It Out logo">
+                <div id="upload_image">
+                    <h2>Add Images</h2>
+                    <input type="file" name="upload_progress_image"
+                        accept="image/*" multiple />
+                </div>
+            </div>
+
+            <div id="progress_card">
+                <h1>Progress</h1>
+                <div id="progress_info">
+                    <div class="header_result header-top">
+                        <div class="left">Since 1/1/2019</div>
+                        <div class="center">Starting</div>
+                        <div class="right">Current</div>
+                    </div>
+                    <div class="header_result">
+                        <div class="left">Weight:</div>
+                        <input class="center" value="178">
+                        <input class="right" value="178">
+                    </div>
+                    <div class="header_result">
+                        <div class="left">Body Fat:</div>
+                        <input class="center" value="12.0%">
+                        <input class="right" value="12.0%">
+                    </div>
+                    <div class="header_result">
+                        <div class="left">BMI:</div>
+                        <input class="center" value="24.1">
+                        <input class="right" value="24.1">
+                    </div>
+                </div>
+                <div id="submit_progress">
+                    <button class="submit_button">Submit Progress</button>
+                </div>
+                <div id="profile_section">
+                    <div id="WIO_score_section">
+                        <h3>Your WIO Score</h3>
+                        <h2 id="WIO_score">...</h2>
+                    </div>
+                </div>
             </div>
         </div>
-        <h1>Progress</h1>
-        <div id="progress_info">
-            <div class="header_result header-top">
-                <div class="left">Since 1/1/2019</div>
-                <div class="center">Starting</div>
-                <div class="right">Current</div>
-            </div>
-            <div class="header_result">
-                <div class="left">Weight:</div>
-                <div class="center">178</div>
-                <div class="right">178</div>
-            </div>
-            <div class="header_result">
-                <div class="left">Body Fat:</div>
-                <div class="center">12.0%</div>
-                <div class="right">12.0%</div>
-            </div>
-            <div class="header_result">
-                <div class="left">BMI:</div>
-                <div class="center">24.1</div>
-                <div class="right">24.1</div>
-            </div>
-        </div>
-
-        <div id="profile_section">
-            <div id="WIO_score_section">
-                <h3>Your WIO Score</h3>
-                <h2 id="WIO_score">...</h2>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-</body>
+    </body>
 
 </html>

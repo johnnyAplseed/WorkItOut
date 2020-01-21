@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width" />
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+        <title>Work It Out | Choose Workout</title>
+    </head>
+
+    <body>
+        <div id="banner">
+            <a id="banner_text_link" href="../content/home.html">Work It Out</a>
+        </div>
+        <div id="wrapper">
+            <div>
+                <img id="BruceLeeImage" src="../images/enter-the-six-pack-5.jpg">
+                <p class="workout_description">This is a workout inspired by the late, great master of martial arts - Bruce Lee.
+                    You can find the original inspiration
+                    <a style="color: #990000" href="https://www.bodybuilding.com/fun/getting-fit-and-strong-the-bruce-lee-way.htm" target="window">here</a>
+                </p>
+            </div>
+            <div id="current_workout">
+                <!-- I want the workout to display sort of like a piece of paper that you would typically write on -->
+
+                <div>
+                    <Div id="WorkoutTite">ENTER THE SIX PACK</div>
+                    <!-- Display a Timer after pressing start -->
+                    <!-- <div>
+                        <button class="start_end_workout">START WORKOUT</button>
+                    </div> -->
+                    <table id="workout_table">
+                        <!-- <caption id="workout_table_name">Enter The Six Pack</caption> -->
+                        <!-- -->
+                        <!-- This is the main workout -->
+                        <!--  -->
+                        <tr class="new_workout_row rest_row">
+                            <td class="new_workout_data rest_row" contenteditable="false" colspan="6"></td>
+                        </tr>
+                        <tr class="new_workout_row rest_row">
+                            <td class="new_workout_data rest_row rest_row" contenteditable="true" colspan="6">MAIN WORKOUT</td>
+                        </tr>
+                        <tr class="new_workout_row rest_row">
+                            <td class="new_workout_data rest_row" contenteditable="false" colspan="6"></td>
+                        </tr>
+                        <tr class="new_workout_row" id="row_headers">
+                            <td class="new_workout_data new_workout_headers">EXERCISE</td>
+                            <td class="new_workout_data new_workout_headers">Sets / Reps</td>
+                            <td class="new_workout_data new_workout_headers">LBs</td>
+                            <td class="new_workout_data new_workout_headers">Set 1</td>
+                            <td class="new_workout_data new_workout_headers">Set 2</td>
+                            <td class="new_workout_data new_workout_headers">Notes</td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="true">Kettle Bell Squats</td>
+                            <td class="new_workout_data" contenteditable="true">2 / 8e</td>
+                            <td class="new_workout_data" contenteditable="true">~16</td>
+                            <td class="new_workout_data" contenteditable="true"> </td>
+                            <td class="new_workout_data" contenteditable="true"> </td>
+                            <td class="new_workout_data" contenteditable="true"> </td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="true">Squats</td>
+                            <td class="new_workout_data" contenteditable="true">2 / 12</td>
+                            <td class="new_workout_data" contenteditable="true">~110</td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="true">Bent Arm Pullover</td>
+                            <td class="new_workout_data" contenteditable="true">2 / 8</td>
+                            <!-- <td class="new_workout_data" contenteditable="true">8</td> -->
+                            <td class="new_workout_data" contenteditable="true">45</td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="true">Bench Press</td>
+                            <td class="new_workout_data" contenteditable="true">2 / 6</td>
+                            <!--  <td class="new_workout_data" contenteditable="true">6</td> -->
+                            <td class="new_workout_data" contenteditable="true">~115</td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="true">Stiff Leg Good Morning</td>
+                            <td class="new_workout_data" contenteditable="true">2 / 8</td>
+                            <!--  <td class="new_workout_data" contenteditable="true">8</td> -->
+                            <td class="new_workout_data" contenteditable="true">17.5e</td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="true">Curls</td>
+                            <td class="new_workout_data" contenteditable="true">2 / 8</td>
+                            <!--  <td class="new_workout_data" contenteditable="true">8</td> -->
+                            <td class="new_workout_data" contenteditable="true">30e</td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="false">Notes</td>
+                            <td class="new_workout_data" contenteditable="true" colspan="5"></td>
+                        </tr>
+                        <!-- -->
+                        <!-- This is the core muscle workout -->
+                        <!--  -->
+                        <tr class="new_workout_row rest_row">
+                            <td class="new_workout_data rest_row" contenteditable="false" colspan="6"></td>
+                        </tr>
+                        <tr class="new_workout_row rest_row">
+                            <td class="new_workout_data rest_row rest_row" contenteditable="false" colspan="6">TRANSITION TO CORE</td>
+                        </tr>
+                        <tr class="new_workout_row rest_row">
+                            <td class="new_workout_data rest_row" contenteditable="false" colspan="6"></td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data new_workout_headers" contenteditable="false">CORE TRAINING</td>
+                            <td class="new_workout_data new_workout_headers" contenteditable="false" colspan="5">3 + sets / TO FAILURE</td>
+                            <!--  <td class="new_workout_data" contenteditable="true">8</td> -->
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data new_workout_headers" contenteditable="false">Exercise</td>
+                            <td class="new_workout_data new_workout_headers" contenteditable="false">Set 1</td>
+                            <!--  <td class="new_workout_data" contenteditable="true">8</td> -->
+                            <td class="new_workout_data new_workout_headers" contenteditable="false">Set 2</td>
+                            <td class="new_workout_data new_workout_headers" contenteditable="false">Set 3</td>
+                            <td class="new_workout_data new_workout_headers" contenteditable="false">Set 4</td>
+                            <td class="new_workout_data new_workout_headers" contenteditable="false">Set 5</td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="true">Medicine Ball Drops</td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <!--  <td class="new_workout_data" contenteditable="true">8</td> -->
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="true">Weighted Side Bends</td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <!--  <td class="new_workout_data" contenteditable="true">8</td> -->
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="true">Hanging Leg Raises</td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <!--  <td class="new_workout_data" contenteditable="true">8</td> -->
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="true">Sit-Ups</td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <!--  <td class="new_workout_data" contenteditable="true">8</td> -->
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                            <td class="new_workout_data" contenteditable="true"></td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="false">Notes</td>
+                            <td class="new_workout_data" contenteditable="true" colspan="5"></td>
+                        </tr>
+                        <!-- -->
+                        <!-- This is the cooldown section -->
+                        <!--  -->
+                        <tr class="new_workout_row rest_row">
+                            <td class="new_workout_data rest_row" contenteditable="false" colspan="6"></td>
+                        </tr>
+                        <tr class="new_workout_row rest_row">
+                            <td class="new_workout_data rest_row rest_row" contenteditable="true" colspan="6">Cooldown - 10 mins+</td>
+                        </tr>
+                        <tr class="new_workout_row rest_row">
+                            <td class="new_workout_data rest_row" contenteditable="false" colspan="6"></td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="true" colspan="3">Time on Bike</td>
+                            <td class="new_workout_data" contenteditable="true" colspan="3"></td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="true" colspan="3">Distance on Bike</td>
+                            <td class="new_workout_data" contenteditable="true" colspan="3"></td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="false">Notes</td>
+                            <td class="new_workout_data" contenteditable="true" colspan="5"></td>
+                        </tr>
+                        <tr class="new_workout_row rest_row">
+                            <td class="new_workout_data rest_row" contenteditable="false" colspan="6"></td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data rest_row" contenteditable="false" colspan="6">Review</td>
+                        </tr>
+                        <tr class="new_workout_row rest_row">
+                            <td class="new_workout_data rest_row" contenteditable="false" colspan="6"></td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="false" colspan="3">Heart Rate</td>
+                            <td class="new_workout_data" contenteditable="true" colspan="3"></td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="false" colspan="3">Time Elapsed</td>
+                            <td class="new_workout_data" contenteditable="true" colspan="3"></td>
+                        </tr>
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="false" colspan="3">Calories Burned</td>
+                            <td class="new_workout_data" contenteditable="true" colspan="3">~</td>
+                        </tr>
+
+                        <tr class="new_workout_row">
+                            <td class="new_workout_data" contenteditable="false">Notes</td>
+                            <td class="new_workout_data" contenteditable="true" colspan="5"></td>
+                        </tr>
+                    </table>
+
+
+                </div>
+                <!-- <button onclick="window.location.href= '../content/home.html';"
+                    class="start_end_workout">FINSH WORKOUT</button> -->
+            </div>
+        </div>
+
+        <!-- <script src="../scripts/working_out.js"></script> -->
+    </body>
+
+</html>

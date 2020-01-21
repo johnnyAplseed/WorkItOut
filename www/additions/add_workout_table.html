@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width" />
+
+<head>
+    <title>Work It Out | Create Workout</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+    <script src="../scripts/add_custom_workout_table.js"></script>
+</head>
+
+<body>
+
+    <div id="banner">
+        <!-- <img src="BackArrow.jpg" alt="The back button" /> -->
+        <a id="banner_text_link" href="../content/home.html">Work It Out</a>
+    </div>
+
+    <div id="wrapper">
+        <div>
+
+            <div id="name_workout">
+                <h1>New Custom Workout:</h1>
+                <input type="text" id="new_workout_name" clas="w3-input" maxlength="40"
+                    placeholder="Name of workout..."></input>
+            </div>
+
+            <div id="typeof_workout">
+                <h2>Workout Type:</h2>
+                <select id="workout_type">
+                    <option value="Default">Choose one...</option>
+                    <option value="Biking">Biking</option>
+                    <option value="Cardio">Cardio</option>
+                    <option value="Circuit_Training">Circuit Training</option>
+                    <option value="Crossfit">Crossfit</option>
+                    <option value="HIIT">H.I.I.T.</option>
+                    <option value="Running">Running</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Strength">Strength</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Weight_Training">Weight Training</option>
+                </select>
+            </div>
+            <hr>
+            <div id="new_workout">
+                <h2>New Workout</h2>
+                <table id="new_workout_table">
+                    <tr class="new_workout_row" id="row_headers">
+                        <th class="new_workout_data new_workout_headers">Exercise</th>
+                        <th class="new_workout_data new_workout_headers">Weight</th>
+                        <th class="new_workout_data new_workout_headers">Sets</th>
+                        <th class="new_workout_data new_workout_headers">Reps</th>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_1_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_1_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_1_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_1_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_2_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_2_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_2_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_2_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_3_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_3_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_3_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_3_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_4_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_4_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_4_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_4_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_5_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_5_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_5_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_5_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_6_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_6_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_6_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_6_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_7_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_7_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_7_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_7_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_8_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_8_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_8_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_8_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_9_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_9_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_9_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_9_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_10_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_10_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_10_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_10_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_11_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_11_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_11_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_11_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_12_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_12_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_12_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_12_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_13_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_13_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_13_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_13_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_14_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_14_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_14_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_14_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_15_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_15_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_15_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_15_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_16_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_16_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_16_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_16_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_17_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_17_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_17_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_17_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_18_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_18_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_18_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_18_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_19_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_19_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_19_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_19_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                    <tr class="new_workout_row">
+                        <td id="table_data_20_1" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_20_2" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_20_3" class="new_workout_data" contenteditable="true"></td>
+                        <td id="table_data_20_4" class="new_workout_data" contenteditable="true"></td>
+                    </tr>
+                </table>
+                <textarea id="new_workout_notes" placeholder="Notes for your workout..."></textarea>
+            </div>
+
+        </div>
+        <div class="cancel_submit">
+            <button id="cancel_button" onclick="window.location.href='../content/workouts.html'">Cancel</button>
+            <button id="submit_button" type="submit" onclick="saveWorkoutTable()">Submit</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
