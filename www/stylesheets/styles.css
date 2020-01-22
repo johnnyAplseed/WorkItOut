@@ -587,7 +587,8 @@ input[type="text"]:focus {
     width: calc(100% - 1 rem);
 }
 
-#new_workout_table {
+#new_workout_table,
+.new_workout_table {
     width: 100%;
     border: 1px black solid;
     border-collapse: collapse;

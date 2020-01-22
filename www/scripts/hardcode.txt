@@ -1,0 +1,136 @@
+
+    // this.workoutName = document.getElementById("new_workout_name").value;
+    // this.workoutType = document.getElementById("workout_type").value;
+
+    // workoutTable2[0] = document.getElementById("table_data_1_1").innerHTML;
+    // workoutTable2[1] = document.getElementById("table_data_1_2").innerHTML;
+    // workoutTable2[2] = document.getElementById("table_data_1_3").innerHTML;
+    // workoutTable2[3] = document.getElementById("table_data_1_4").innerHTML;
+
+    // workoutTable2[4] = document.getElementById("table_data_2_1").innerHTML;
+    // workoutTable2[5] = document.getElementById("table_data_2_2").innerHTML;
+    // workoutTable2[6] = document.getElementById("table_data_2_3").innerHTML;
+    // workoutTable2[7] = document.getElementById("table_data_2_4").innerHTML;
+
+    // workoutTable2[8] = document.getElementById("table_data_3_1").innerHTML;
+    // workoutTable2[9] = document.getElementById("table_data_3_2").innerHTML;
+    // workoutTable2[10] = document.getElementById("table_data_3_3").innerHTML;
+    // workoutTable2[11] = document.getElementById("table_data_3_4").innerHTML;
+
+    // workoutTable2[12] = document.getElementById("table_data_4_1").innerHTML;
+    // workoutTable2[13] = document.getElementById("table_data_4_2").innerHTML;
+    // workoutTable2[14] = document.getElementById("table_data_4_3").innerHTML;
+    // workoutTable2[15] = document.getElementById("table_data_4_4").innerHTML;
+
+    // workoutTable2[16] = document.getElementById("table_data_5_1").innerHTML;
+    // workoutTable2[17] = document.getElementById("table_data_5_2").innerHTML;
+    // workoutTable2[18] = document.getElementById("table_data_5_3").innerHTML;
+    // workoutTable2[19] = document.getElementById("table_data_5_4").innerHTML;
+
+    // workoutTable2[20] = document.getElementById("table_data_6_1").innerHTML;
+    // workoutTable2[21] = document.getElementById("table_data_6_2").innerHTML;
+    // workoutTable2[22] = document.getElementById("table_data_6_3").innerHTML;
+    // workoutTable2[23] = document.getElementById("table_data_6_4").innerHTML;
+
+    // workoutTable2[24] = document.getElementById("table_data_7_1").innerHTML;
+    // workoutTable2[25] = document.getElementById("table_data_7_2").innerHTML;
+    // workoutTable2[26] = document.getElementById("table_data_7_3").innerHTML;
+    // workoutTable2[27] = document.getElementById("table_data_7_4").innerHTML;
+
+    // workoutTable2[28] = document.getElementById("table_data_8_1").innerHTML;
+    // workoutTable2[29] = document.getElementById("table_data_8_2").innerHTML;
+    // workoutTable2[30] = document.getElementById("table_data_8_3").innerHTML;
+    // workoutTable2[31] = document.getElementById("table_data_8_4").innerHTML;
+
+    // workoutTable2[32] = document.getElementById("table_data_9_1").innerHTML;
+    // workoutTable2[33] = document.getElementById("table_data_9_2").innerHTML;
+    // workoutTable2[34] = document.getElementById("table_data_9_3").innerHTML;
+    // workoutTable2[35] = document.getElementById("table_data_9_4").innerHTML;
+
+    // workoutTable2[36] = document.getElementById("table_data_10_1").innerHTML;
+    // workoutTable2[37] = document.getElementById("table_data_10_2").innerHTML;
+    // workoutTable2[38] = document.getElementById("table_data_10_3").innerHTML;
+    // workoutTable2[39] = document.getElementById("table_data_10_4").innerHTML;
+
+    // workoutTable2[40] = document.getElementById("table_data_11_1").innerHTML;
+    // workoutTable2[41] = document.getElementById("table_data_11_2").innerHTML;
+    // workoutTable2[42] = document.getElementById("table_data_11_3").innerHTML;
+    // workoutTable2[43] = document.getElementById("table_data_11_4").innerHTML;
+
+    // workoutTable2[44] = document.getElementById("table_data_12_1").innerHTML;
+    // workoutTable2[45] = document.getElementById("table_data_12_2").innerHTML;
+    // workoutTable2[46] = document.getElementById("table_data_12_3").innerHTML;
+    // workoutTable2[47] = document.getElementById("table_data_12_4").innerHTML;
+
+    // workoutTable2[48] = document.getElementById("table_data_13_1").innerHTML;
+    // workoutTable2[49] = document.getElementById("table_data_13_2").innerHTML;
+    // workoutTable2[50] = document.getElementById("table_data_13_3").innerHTML;
+    // workoutTable2[51] = document.getElementById("table_data_13_4").innerHTML;
+
+    // workoutTable2[52] = document.getElementById("table_data_14_1").innerHTML;
+    // workoutTable2[53] = document.getElementById("table_data_14_2").innerHTML;
+    // workoutTable2[54] = document.getElementById("table_data_14_3").innerHTML;
+    // workoutTable2[55] = document.getElementById("table_data_14_4").innerHTML;
+
+    // workoutTable2[56] = document.getElementById("table_data_15_1").innerHTML;
+    // workoutTable2[57] = document.getElementById("table_data_15_2").innerHTML;
+    // workoutTable2[58] = document.getElementById("table_data_15_3").innerHTML;
+    // workoutTable2[59] = document.getElementById("table_data_15_4").innerHTML;
+
+    // workoutTable2[60] = document.getElementById("table_data_16_1").innerHTML;
+    // workoutTable2[61] = document.getElementById("table_data_16_2").innerHTML;
+    // workoutTable2[62] = document.getElementById("table_data_16_3").innerHTML;
+    // workoutTable2[63] = document.getElementById("table_data_16_4").innerHTML;
+
+    // workoutTable2[64] = document.getElementById("table_data_17_1").innerHTML;
+    // workoutTable2[65] = document.getElementById("table_data_17_2").innerHTML;
+    // workoutTable2[66] = document.getElementById("table_data_17_3").innerHTML;
+    // workoutTable2[67] = document.getElementById("table_data_17_4").innerHTML;
+
+    // workoutTable2[68] = document.getElementById("table_data_18_1").innerHTML;
+    // workoutTable2[69] = document.getElementById("table_data_18_2").innerHTML;
+    // workoutTable2[70] = document.getElementById("table_data_18_3").innerHTML;
+    // workoutTable2[71] = document.getElementById("table_data_18_4").innerHTML;
+
+    // workoutTable2[72] = document.getElementById("table_data_19_1").innerHTML;
+    // workoutTable2[73] = document.getElementById("table_data_19_2").innerHTML;
+    // workoutTable2[74] = document.getElementById("table_data_19_3").innerHTML;
+    // workoutTable2[75] = document.getElementById("table_data_19_4").innerHTML;
+
+    // workoutTable2[76] = document.getElementById("table_data_20_1").innerHTML;
+    // workoutTable2[77] = document.getElementById("table_data_20_2").innerHTML;
+    // workoutTable2[78] = document.getElementById("table_data_20_3").innerHTML;
+    // workoutTable2[79] = document.getElementById("table_data_20_4").innerHTML;
+
+    // this.workoutNotes = document.getElementById("new_workout_notes").value;
+
+    // console.log("workoutTable2:\nWorkout Name: " + this.workoutName +
+    //     "\nWorkout Type: " + this.workoutType +
+    //     "\nWorkout Array: " + this.workoutTable2 +
+    //     "\nWorkout Notes: " + this.workoutNotes);
+
+
+
+
+    
+    //loop through table to grab workouts
+    for (var i = 1; i < 21; i++) {
+        for (var j = 1; j < 5; j++) {
+            //check if the cell has value
+            if (document.getElementById("table_data_" + i + "_" + j).innerHTML.length > 0) {
+                //add populated cell to the end of the array
+                this.workoutTable.push(document.getElementById("table_data_" + i + "_" + j).innerHTML);
+            }
+        }
+    }
+    //Add workout name, type, and notes to the array
+    this.workoutTable.push(document.getElementById("new_workout_name").value);
+    this.workoutTable.push(document.getElementById("workout_type").value);
+    this.workoutTable.push(document.getElementById("new_workout_notes").value);
+
+    var arLength = workoutTable.length;
+    //Log the results for validation
+    console.log("NEW WORKOUT1:\nWorkout Name: " + this.workoutTable[arLength - 3] +
+        "\nWorkout Type: " + this.workoutTable[arLength - 2] +
+        "\nWorkout Array: " + this.workoutTable.slice(0, arLength - 3) +
+        "\nWorkout Notes: " + this.workoutTable[arLength - 1]);
