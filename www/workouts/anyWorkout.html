@@ -17,14 +17,18 @@
 				src="../images/work_it_out_logo_workouts.png" alt="Work It
                     Out logo">
 		</div>
+		<button class="workout_button" style="margin-bottom: 1.5rem;" onclick="startTimer()">START</button>
 		<div id="any_workout_div">
 			<table id="any_workout_table" class="new_workout_table">
 				<tr id="any_workout_headers_1">
 					<td class="new_workout_data new_workout_headers">Name</td>
 					<td class="new_workout_data new_workout_headers">Wt.</td>
-					<td class="new_workout_data new_workout_headers"><sup>S</sup>/<sub>R</sub></td>
+					<td class="new_workout_data new_workout_headers"><sup>Sets</sup>/<sub>Reps</sub></td>
 				</tr>
 			</table>
+		</div>
+		<div id="end_timer">
+			<button class="workout_button" style="margin-top: 1.5rem;" onclick="displayWorkoutMinutes()">FINISH</button>
 		</div>
 	</div>
 	<!-- <script src=""></script> -->

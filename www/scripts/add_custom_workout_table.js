@@ -6,6 +6,9 @@ this.workoutNotes;
 
 function saveWorkoutTable() {
 
+    var workoutArray = JSON.parse(window.localStorage.getItem("Workouts"));
+
+
     var newWorkout = {
         name: null,
         type: null,
@@ -14,6 +17,7 @@ function saveWorkoutTable() {
         arrLength: 0,
         dateCreated: new Date()
     };
+
 
     //loop through table to grab workouts
     for (var i = 1; i < 21; i++) {
@@ -38,9 +42,10 @@ function saveWorkoutTable() {
         "\nArray Length:" + newWorkout.arrLength +
         "\nWorkout Notes: " + newWorkout.notes);
 
+    workoutArray.push(newWorkout);
 
     confirm("Are you sure you want to submit this workout?");
-    window.localStorage.setItem("Workouts", JSON.stringify(newWorkout));
+    window.localStorage.setItem("Workouts", JSON.stringify(workoutArray));
     window.location.href = "../content/workouts.html";
 }
 
