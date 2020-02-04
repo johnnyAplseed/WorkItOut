@@ -6,7 +6,8 @@ this.workoutNotes;
 
 function saveWorkoutTable() {
 
-    var workoutArray = JSON.parse(window.localStorage.getItem("Workouts"));
+    workoutArray = JSON.parse(window.localStorage.getItem("Workouts")) ? JSON.parse(window.localStorage.getItem("Workouts")) : [];
+    console.log(workoutArray);
 
 
     var newWorkout = {
