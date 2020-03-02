@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width" />
 
-<head>
-	<link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
-	<title>Work It Out | Choose Workout</title>
-</head>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+		<title>Work It Out | Choose Workout</title>
+	</head>
 
-<body>
-	<div id="banner">
-		<a id="banner_text_link" href="../content/home.html">Work It Out</a>
-	</div>
-	<div id="wrapper">
-		<div>
-			<img id="page_image" onclick="window.location.href='../content/workouts.html'"
-				src="../images/work_it_out_logo_workouts.png" alt="Work It
-                    Out logo">
+	<body>
+		<div id="banner">
+			<a id="banner_text_link" href="../content/home.html">Work It Out</a>
 		</div>
-		<div>
-			<h1 id="any_workout_name">Workout Name</h1>
+		<div id="wrapper">
+			<div>
+				<img id="page_image" onclick="window.location.href='../content/workouts.html'"
+					src="../images/work_it_out_logo_workouts.png" alt="Work It
+					Out logo">
+			</div>
+			<div>
+				<h1 id="any_workout_name">Workout Name</h1>
+			</div>
+			<button class="workout_button" style="margin-bottom: 1.5rem;" onclick="startTimer()">START</button>
+			<div id="any_workout_div">
+				<table id="any_workout_table" class="new_workout_table">
+					<tr id="any_workout_headers_1">
+						<td class="new_workout_data new_workout_headers">Name</td>
+						<td class="new_workout_data new_workout_headers">Wt.</td>
+						<td class="new_workout_data new_workout_headers"><sup>Sets</sup>/<sub>Reps</sub></td>
+					</tr>
+				</table>
+			</div>
+			<div>
+				<h3>NOTES</h3>
+				<p id='notes_paragraph' contenteditable='true'></p>
+			</div>
+			<div id="end_timer">
+				<button class="workout_button" style="margin-top: 1.5rem;" onclick="displayWorkoutMinutes()">FINISH</button>
+			</div>
 		</div>
-		<button class="workout_button" style="margin-bottom: 1.5rem;" onclick="startTimer()">START</button>
-		<div id="any_workout_div">
-			<table id="any_workout_table" class="new_workout_table">
-				<tr id="any_workout_headers_1">
-					<td class="new_workout_data new_workout_headers">Name</td>
-					<td class="new_workout_data new_workout_headers">Wt.</td>
-					<td class="new_workout_data new_workout_headers"><sup>Sets</sup>/<sub>Reps</sub></td>
-				</tr>
-			</table>
-		</div>
-		<div>
-			<h3>NOTES</h3>
-			<p id='notes_paragraph' contenteditable='true'></p>
-		</div>
-		<div id="end_timer">
-			<button class="workout_button" style="margin-top: 1.5rem;" onclick="displayWorkoutMinutes()">FINISH</button>
-		</div>
-	</div>
-	<!-- <script src=""></script> -->
-	<script src="../scripts/anyWorkout.js"></script>
-</body>
+		<!-- <script src=""></script> -->
+		<script src="../scripts/anyWorkout.js"></script>
+	</body>
 
 </html>

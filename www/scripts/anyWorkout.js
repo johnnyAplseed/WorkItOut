@@ -51,6 +51,7 @@ for (var j = 0; j < this.maxSets; j++) {
 	currentDiv.appendChild(nodeTD);
 }
 
+this.workoutNamesList = [];
 //Generate Workout names, weight, sets/Reps, empty sets space
 for (var k = 0; k < exerciseCount; k++) {
 	// console.log(workout.exercises);
@@ -62,10 +63,12 @@ for (var k = 0; k < exerciseCount; k++) {
 	tableRow.className = "new_workout_row";
 
 
+
 	//create data to be added to row
 	let tableDataName = document.createElement("td");
 	tableDataName.className = "new_workout_data";
-	tableDataName.innerHTML = this.workout.exercises.shift().toString();
+	workoutNamesList.push(this.workout.exercises.shift().toString());
+	tableDataName.innerHTML = workoutNamesList[k].toString();
 	tableRow.appendChild(tableDataName);
 
 	let tableDataWt = document.createElement("td");
@@ -119,6 +122,45 @@ function isLessThanTen() {
 	if (Math.round(this.millisecondsElapsed / 1000 % 60) < 10)
 		return 0;
 	else return "";
+}
+
+//Saves the completed workout to local Storarge
+function saveWorkout() {
+
+	var workoutHistories = []
+	var lastWorkout = {
+		name: null,
+		type: null,
+		notes: null,
+		exercises: [],
+		arrLength: 0,
+		dateCreated: new Date()
+	};
+
+	//The name will be used to overwrite the local storage unless I decide to use IDs
+	lastWorkout.name = document.getElementById("any_workout_name").innerHTML.toString();
+	lastWorkout.notes = document.getElementById("notes_paragraph").innerHTML.toString();
+	lastWorkout.exercises = this.workout.exercises;
+
+
+	for (var m = 1; m < this.exerciseCount; m++) {
+		lastWorkout.exercises.push(workoutNamesList[m - 1].toString());
+		for (var n = 1; n < this.maxSets; m++) {
+			if (document.getElementById("workout" + m + "set" + n).innerHTML.length > 0) {
+				//add populated cell to the end of the array
+				lastWorkout.exercises.push(document.getElementById("workout" + m + "set" + n).innerHTML.toString());
+			}
+
+		}
+	}
+
+	if (localStorage.getItem("WorkoutHistory").length > 0) {
+		workoutHistories = JSON.parse(localStorage.getItem("WorkoutHistory"));
+		workoutHistories.push(lastWorkout);
+		localStorage.setItem("WorkoutHistory", JSON.stringify(workoutHistories));
+	} else {
+		localStorage.setItem("WorkoutHistory", JSON.stringify(workoutHistories));
+	}
 }
 
 //Displays the time in the appropriate spot; appends child node if doesnt exist
